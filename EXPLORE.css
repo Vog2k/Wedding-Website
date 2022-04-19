@@ -3,12 +3,14 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+/*TOP OF THE WEBSITE-THE FIRST LINE OF ACTION-PICTURE */
 .banner{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
+/*SLIDER IS APART OF THE LITTLE SLIDE SHOW IN THE BACKGROUND*/
 .slider{
    width: 100%;
     height: 100vh;
@@ -36,7 +38,7 @@
         transform: scale(1.3);
     }
 }    
-
+/*THIS LINE BELOW DIMS THE BRIGHTNESS OF HE WEBPAGE*/
 .overlay{
     width: 100%;
     height: 100vh;
@@ -44,12 +46,14 @@
     position: absolute;
     top: 0;
 }
+/*SHOWS THE WORD AT THE TOP THAT ARE CLICKABLE*/
 .navbarz{
     width: 150%;
     display: flex;
     align-items: center;
     margin: 35px auto;
  }
+ /*THE LOGO IN THE TOP LEFT-HAND SIDE OF THE SCREEN*/
  .logo{
     flex-basis: 15%;
  }
@@ -58,6 +62,7 @@
     width: 120px;
     cursor: pointer;
  }
+ /*NOT INSERTED YET BUT THIS WILL HAVE THE LOGO OF A CART AND MORE */
  .menu-icons{
     flex: 1;
     align-items: center;
@@ -68,6 +73,7 @@
     margin-left: 40px;
     cursor: pointer;
 }
+/*DESCRIPTION IN THE CENTER*/
 .content{
     width: 60%;
     margin: 160px auto 0;
@@ -84,6 +90,7 @@
     font-weight: 100;
     line-height: 25px;
 }
+/*THE TWO BUTTONS IN THE MIDDLE OF THE SCREEN*/
 button{
     width: 200px;
     padding: 15px 0;
@@ -179,7 +186,7 @@ nav .fa{
 
     } 
 }
-/*------ views -----*/
+/*------LOCATIONS INCLUDING 3 ROWS -----*/
 .Locations{
     width: 80%;
     margin: auto;
@@ -202,7 +209,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.course-col{
+.locations-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -216,7 +223,7 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
-.course-col:hover{
+.locations-col:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 @media(max-width: 700px){
@@ -226,23 +233,23 @@ h3{
 
 }
 
-/*-------- Wanaka------*/
+/*-------- services------*/
 
 
-.wanaka{
+.services{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-.wanaka-col{
+.services-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.wanaka-col img{
+.services-col img{
     width: 100%;
     height: 100%;
     display: block;
