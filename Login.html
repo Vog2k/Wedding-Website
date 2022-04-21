@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Weddings & Events</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+             <img src="images/kamana.jpg" id="slideImg">
+      </div>
+        <div class="overlay">
+            <div class="navbarz">
+                <!--LOGO-->
+                <div class="logo">
+                    <a href="Home.html">
+                    <img src="images/pngwing.com.png">
+                    </a>
+                </div>
+                <!--LOGO-->
+                <section class="header">
+                    <nav>
+                        <div class="nav-links" id="navLinks">
+                                    <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
+                                <ul>
+                                    <li><a href="Home.html">HOME</a></li>
+                                    <li><a href="Venues.html">VENUES</a></li>
+                                    <li><a href="Gallery.html">GALLERY</a></li>
+                                    <li><a href="Calender.html">CALENDER</a></li>
+                                    <li><a href="Contact Us.html">CONTACT US</a></li>
+                                    <li><a href="About Us.html">ABOUT US</a></li>
+                                    <li><a href="REVIEWS.html">REVIEWS</a></li>
+                                    <li><a href="EXPLORE.html">EXPLORE</a></li>
+                                    <!--LINES ABOVE MAKE UP THE NAVBAR ON THE SITE-->    
+                                </ul>
+                            </div>
+                        </nav>
+                    </div> 
+</section>
+<br>
+<section>
+
+            <div id="login-box">
+                <div class="left-box">
+                    <h1> Sign Up</h1>
+        
+                        <input type="text" name="username" placeholder="Username"/>
+                        <input type="text" name="email" placeholder="Email"/>
+                        <input type="text" name="password" placeholder="Password"/>
+        
+                        <input type="text" name="Password2" placeholder="RetypePassword"/>
+        
+                        <input type="submit" name="signup-button" value="Sign Up"/>
+                        
+                    </div>
+                    <div class="right-box">
+                        <span class="signinwith">Sign in with<br/>Social Network
+                        </span>
+        
+                    <button class="social facebook">Log in with Facebook</button>
+                    <button class="social twitter">Log in with Twitter</button>
+                    <button class="social google">Log in with Google+</button>
+                    
+                    </div>
+                    <div class="or"><P>OR</P></div>
+                </div>    
+
+
+
+            </div>      
+        </div>
+    </section>
+</head>
+<main>
+</main>    
+    <!-- Call To Action---->
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses <br> Anywhere From The
+        World</h1>
+        <a href="Contact Us.html" class="hero-btn">CONTACT US</a>
+    </section>
+    
+    <!-- Footer---->
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Pellentesque aliquet turpis nulla, eleifend
+            faucibus est <br> sollicitudin ut. Maecenas ut venenatis ex,
+            et dapibus purus</p>
+    
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+    
+                <i class="fa fa-twitter"></i>
+    
+                <i class="fa fa-instagram"></i>
+    
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made With <i class="fa fa-heart-o"></i> Timothy Leatau </p>
+    </section>
+    
+    
+    <!-----JavaAcript for Toggle Menu------>
+    <script>
+    
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }    
+    
+    </script>
+}

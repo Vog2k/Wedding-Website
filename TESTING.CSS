@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.wrapper{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.wrapper-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: anil 25s ease-out forwards;
+}
+.wrapper-text{
+    text-align: center;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 5px;
+    font-family: poppins;
+    text-transform: uppercase;
+    margin-bottom: 180px;
+    padding: 3rem 2rem;
+    border-radius: 0.25rem;
+    background-color: rgba(255,0,0,0.8);
+    opacity: 0;
+    animation: ani2 8.5s ease-out forwards;
+}
+.wrapper-text h2,
+.wrapper-text h4{
+    opacity: 0;
+    margin: 0;
+}
+.wrapper-text h2{
+    animation: ani2 0.75s ease-out 3s forwards;
+}
+.wrapper-text h4{
+    animation: ani2 0.75s ease-out 3s forwards;
+    animation: ani2 0.75s ease-out 4s forwards;
+}
+@keyframes ani2{
+    100%{
+        opacity: 1;
+    }
+}
+    
+@keyframes anil{
+    100%{
+        transform: scale (1.55);
+    }
+}

@@ -1,13 +1,15 @@
 <html>
 <head>
     <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Home W&E</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<head>
 <body onload="slider()">
     <div class="banner">
         <div class="slider">
@@ -17,7 +19,10 @@
             <div class="navbarz">
                 <div class="logo">
                     <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
+                    <a href="Home.html">
                     <img src="images/pngwing.com.png">
+                    </a>
+                        
                 </div>
 
                 <section class="header">
@@ -26,11 +31,13 @@
                                     <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
                                 <ul>
                                     <!--<li><a href="">HOME</a></li>-->
+                                    <ol><li><a href="Home.html">HOME</a></li></ol>
                                     <li><a href="Venues.html">VENUES</a></li>
                                     <li><a href="Gallery.html">GALLERY</a></li>
                                     <li><a href="Calender.html">CALENDER</a></li>
                                     <li><a href="Contact Us.html">CONTACT US</a></li>
                                     <li><a href="About Us.html">ABOUT US</a></li>
+                                    <li><a href="EXPLORE.html">EXPLORE</a></li>
                                     
                                 </ul>
                             </div>
@@ -41,13 +48,19 @@
             </div>
 
                 <div class="content">
-                    <h1>AND SO THE ADVENTURE BEGINS</h1>
-                    <h3>Plan your future now </h3>
-                
-                
-                    <div>
-                        <button type="button">EXPLORE</button>
-                        <button type="button">PREVIOUS CLIENTS</button>
+                    <div style="position: relative;bottom: -160px;">
+                        <div class="wrapper-text">
+                            <h1>AND SO THE ADVENTURE BEGINS</h1>
+                        </div>
+                    <!--<h3>Plan your future now </h3>-->
+                </div>
+
+                    
+                        <div style="position: relative;bottom: -160px;">
+                        <button type="button"><a href="EXPLORE.html" style="text-decoration: none; color: white;" class="button">Explore</a></button>
+                 
+                        <button type="button"><a href="REVIEWS.html" style="text-decoration: none; color: white;" class="button">Reviews</a></button>
+                        </div>
                     </div>
 
             </div>      
@@ -84,14 +97,17 @@
     </script>
             <!--ABOVE Slide Show Images --><!--Slide Show Images --><!--Slide Show Images -->
 
-<section>
 
+</head>
+<main>
+
+<!--Locations class -->
     <section class="Locations">
         <h1>Locations</h1>
         <p>Check out the beautiful views here!</p>
     
         <div class="row">
-            <div class="course-col">
+            <div class="locations-col">
                 <h3>North Island</h3>
                 <p>Northland <br>
                     Auckland <br>
@@ -103,7 +119,7 @@
                     Hawke's Bay Region <br>
                     Wellington Region</p>
             </div>
-            <div class="course-col">
+            <div class="locations-col">
                     <h3>South Island</h3>
                     <p>Tasman <br>
                     Marlborough <br>
@@ -113,7 +129,7 @@
                     Otago <br>
                     Southland</p>
             </div>
-            <div class="course-col">
+            <div class="locations-col">
                 <h3>Outer Islands</h3>
                 <p>Stewart Island <br>
                     Waiheke Island <br>
@@ -134,7 +150,7 @@
     
     <!--Wanaka-->
     
-    <section class="wanaka">
+    <section class="services">
         <h1>Our Services
             </h1>
         <h3>From a two person’s romantic elopement to a big wedding celebrated with hundreds.
@@ -146,19 +162,20 @@
             (Auckland wedding planning service will be online soon)</h3>
     
         <div class="row">
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/BO.jpg">
                 <div class="layer">
                     <h3>Decorations</h3>
+                    <a href=""></a>
                 </div>
             </div>
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/E3ADD72F-26B3-453E-A912-DD2E68564753-700x467.jpeg">
                 <div class="layer">
                     <h3>Proposal Planning</h3>
                 </div>
             </div>
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/car.jpg">
                 <div class="layer">
                     <h3>Wedding Concierge</h3>
@@ -166,14 +183,14 @@
             </div>
         </div> 
 
-            <!--<div class="wanaka-col">
+            <!--<div class="services-col">
                 <img src="images/make up.jpg">
                 <div class="layer">
                     <h3>Hair & Make up </h3>
                 </div>
             </div> -->
         <section>
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/Kate+Roberge+Photography-154.jpg">
                 <div class="layer">
                     <h3>Pre/Post Photography</h3>
@@ -184,21 +201,21 @@
     
     <!--Wanaka-->
     
-    <section class="wanaka">    
+    <section class="services">    
         <div class="row">
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/make up.jpg">
                 <div class="layer">
                     <h3>Hair and Make up</h3>
                 </div>
             </div>
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/fan.jpg">
                 <div class="layer">
                     <h3>Renewal of vows</h3>
                 </div>
             </div>
-            <div class="wanaka-col">
+            <div class="services-col">
                 <img src="images/prep.jpg">
                 <div class="layer">
                     <h3>Wedding Dress Hire</h3>
@@ -289,12 +306,12 @@
             </div>
     
     </section>
-    
+</main>    
     <!-- Call To Action---->
     <section class="cta">
         <h1>Enroll For Our Various Online Courses <br> Anywhere From The
         World</h1>
-        <a href="" class="hero-btn" >CONTACT US</a>
+        <a href="Contact Us.html" class="hero-btn">CONTACT US</a>
     </section>
     
     <!-- Footer---->
@@ -331,8 +348,4 @@
         }    
     
     </script>
-        
-
-</section>            
-</body>
-</html>
+}
