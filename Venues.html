@@ -1,27 +1,30 @@
 <html>
 <head>
     <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="About us.css">
+    <meta charset="UTF-8">
+    <title>Venues W&E</title>
+    <link rel="stylesheet" href="Venues.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<head>
 <body onload="slider()">
     <div class="banner">
         <video autoplay loop class="back-video" muted plays-inline>
             <source src="Videos/Video3.mp4
             " type="video/mp4">
         </video>
-        <div class="slider">
       </div>
         <div class="overlay">
             <div class="navbarz">
                 <div class="logo">
+                    <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
                     <a href="Home.html">
-                        <img src="images/pngwing.com.png">
-                        </a>
+                    <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
+                    </a>
+                        
                 </div>
 
                 <section class="header">
@@ -30,11 +33,12 @@
                                     <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
                                 <ul>
                                     <!--<li><a href="">HOME</a></li>-->
-                                    <li><a href="Home.html">HOME</a></li>
+                                   
+                                    <li><a href="Venues.html">VENUES</a></li>
                                     <li><a href="Gallery.html">GALLERY</a></li>
                                     <li><a href="Calender.html">CALENDER</a></li>
-                                    <li><a href="Contact Us">CONTACT US</a></li>
-                                    <li><a href="REVIEWS.html">REVIEWS</a></li>
+                                    <li><a href="Contact Us.html">CONTACT US</a></li>
+                                    <li><a href="About Us.html">ABOUT US</a></li>
                                     <li><a href="EXPLORE.html">EXPLORE</a></li>
                                     
                                 </ul>
@@ -45,68 +49,94 @@
     <!--BELOW BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
             </div>
 
+                <div class="content">
+                    <div style="position: relative;bottom: -160px;">
+                        <div class="wrapper-text">
+                            
+                            <h1>AND SO THE ADVENTURE BEGINS</h1>
+                        </div>
+                    <!--<h3>Plan your future now </h3>-->
+                </div>
+
+                    
+                        <div style="position: relative;bottom: -160px;">
+                        <button type="button"><a href="EXPLORE.html" style="text-decoration: none; color: white;" class="button">Explore</a></button>
+                 
+                        <button type="button"><a href="REVIEWS.html" style="text-decoration: none; color: white;" class="button">Reviews</a></button>
+                        </div>
+                    </div>
+
             </div>      
         </div>
     </div>
 <!--ABOVE BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
 
-<section>
 
-    <section class="Locations">
+    <!--BELOW Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "images/lukes.jpg",
+            "images/riverhead.jpg",
+            "images/ohariu-farm-wedding-3.jpg",
+            "images/IMG_5550.jpg",
+            "images/Seating.jpg",
+            "images/image12.jpg",
+            "images/Kamana.jpg"
+            );
+
+        var len = images.length;
+        var i = 0;
+        
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',4000);
+        }
+
+    </script>
+            <!--ABOVE Slide Show Images --><!--Slide Show Images --><!--Slide Show Images -->
+
+
+</head>
+<main>
+
+<div id="navbar">
+    <div style="z-index: -1">
+        <a href="Home.html" id="Home">Home</a>
+        <a href="Venues.html" id="Venues">Venues</a>
+        <a href="Calender.html" id="Calender">Calender</a>
+        <a href="About Us.html" id="About Us">About Us</a>
+      </div>
+</div>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 140) {
+        document.getElementById("navbar").style.top = "0px";
+      } else {
+        document.getElementById("navbar").style.top = "-60px";
+      }
+    }
+    </script>
+<!--Locations class -->
+<section class="Locations">
         <h1>Locations</h1>
-
+        <p>Check out the beautiful views here!</p>
+    
         <div class="row">
-            <div class="course-col">
+            <div class="locations-col">
                 <h3>North Island</h3>
+                <div class="wrapper-text1">
+                
                 <p>Northland <br>
-                Auckland <br>
-                Waikato <br>
-                Bay of Plenty <br>
-                Gisborne <br>
-                Taranaki <br>
-                Manawatū-Whanganui <br>
-                Hawke's Bay Region <br>
-                Wellington Region</p>
-            </div>
-            <div class="course-col">
-                    <h3>South Island</h3>
-                    <p>Tasman <br>
-                    Marlborough <br>
-                    Nelson <br> 
-                    West Coast <br>
-                    Canterbury <br>
-                    Otago <br>
-                    Southland</p>
-            </div>
-            <div class="course-col">
-                <h3>Outer Islands</h3>
-                <p>Stewart Island <br>
-                    Waiheke Island <br>
-                    Matakana Island <br>
-                    Rangitoto Island <br>
-                    Kapiti Island <br>
-                    Kawau Island <br>
-                    Great Barrier Island link <br> 
-                    Tiritiri Matangi Island</p>
-        </div>
-            
-        
-    
-        </div>
-        
-    
-    
-    
-</section>
-<section>
-
-        <section class="Locations">
-
-    
-            <div class="row">
-                <div class="course-col">
-                    <h3>North Island</h3>
-                    <p>Northland <br>
                     Auckland <br>
                     Waikato <br>
                     Bay of Plenty <br>
@@ -115,95 +145,150 @@
                     Manawatū-Whanganui <br>
                     Hawke's Bay Region <br>
                     Wellington Region</p>
+
                 </div>
-                <div class="course-col">
-                        <h3>South Island</h3>
-                        <p>Tasman <br>
-                        Marlborough <br>
-                        Nelson <br> 
-                        West Coast <br>
-                        Canterbury <br>
-                        Otago <br>
-                        Southland</p>
+            </div>
+            <div class="locations-col">
+                    <h3>South Island</h3>
+                    <div class="wrapper-text1">
+                    <p>Tasman <br>
+                    Marlborough <br>
+                    Nelson <br> 
+                    West Coast <br>
+                    Canterbury <br>
+                    Otago <br>
+                    Southland</p>
                 </div>
-                <div class="course-col">
-                    <h3>Outer Islands</h3>
-                    <p>Stewart Island <br>
-                        Waiheke Island <br>
-                        Matakana Island <br>
-                        Rangitoto Island <br>
-                        Kapiti Island <br>
-                        Kawau Island <br>
-                        Great Barrier Island link <br> 
-                        Tiritiri Matangi Island</p>
             </div>
-                
-            
-        
+            <div class="locations-col">
+                <h3>Outer Islands</h3>
+                <div class="wrapper-text1">
+                <p>Stewart Island <br>
+                    Waiheke Island <br>
+                    Matakana Island <br>
+                    Rangitoto Island <br>
+                    Kapiti Island <br>
+                    Kawau Island <br>
+                    Great Barrier Island link <br> 
+                    Tiritiri Matangi Island</p>
+                </div>
             </div>
+    
+        </div>
+
+</section>
+    
+    <!--Wanaka-->
+<section class="services">
+        
+        <h1>Our Services</h1>
+        <div class="wrapper-text1">
+        <h3>From a two person’s romantic elopement to a big wedding celebrated with hundreds.
+
+            From one wedding dress hire to a full wedding package.
             
+            aMoment wedding is your one-stop, all-inclusive wedding planning company in Queenstown.
+            
+            (Auckland wedding planning service will be online soon)</h3>
+        </div>
+        <div class="row">
+            <div class="services-col">
+                <img src="images/BO.jpg">
+                <div class="layer">
+                    <h3>Decorations</h3>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="services-col">
+                <img src="images/E3ADD72F-26B3-453E-A912-DD2E68564753-700x467.jpeg">
+                <div class="layer">
+                    <h3>Proposal Planning</h3>
+                </div>
+            </div>
+            <div class="services-col">
+                <img src="images/car.jpg">
+                <div class="layer">
+                    <h3>Wedding Concierge</h3>
+                </div>
+            </div>
+        </div> 
+
+            <!--<div class="services-col">
+                <img src="images/make up.jpg">
+                <div class="layer">
+                    <h3>Hair & Make up </h3>
+                </div>
+            </div> -->
+        <section>
+            <div class="services-col">
+                <img src="images/Kate+Roberge+Photography-154.jpg">
+                <div class="layer">
+                    <h3>Pre/Post Photography</h3>
+                </div>
+        </section>       
         
-        
-        
-        </section>
+</section>
     
     <!--Wanaka-->
     
-    <section class="wanaka">
-        <h1>For inspiration</h1>
+    <section class="services">    
         <div class="row">
-            <div class="wanaka-col">
-                <img src="Cape.jpg">
+            <div class="services-col">
+                <img src="images/make up.jpg">
                 <div class="layer">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Hair and Make up</h3>
                 </div>
             </div>
-            <div class="wanaka-col">
-                <img src="WELLINGTON.jpg">
+            <div class="services-col">
+                <img src="images/fan.jpg">
                 <div class="layer">
-                    <h3>WELLINGTON</h3>
+                    <h3>Renewal of vows</h3>
                 </div>
             </div>
-            <div class="wanaka-col">
-                <img src="wanaka.png">
+            <div class="services-col">
+                <img src="images/prep.jpg">
                 <div class="layer">
-                    <h3>WANAKA</h3>
+                    <h3>Wedding Dress Hire</h3>
                 </div>
             </div>
-        </div>
-    
-    
-    </section>
+        </div>       
+    </section>            
     
     <!-------dont know yet-------->
     
     <section class="notSure">
         <h1>Still Not Sure</h1>
-            <h3>Our Clients Suggest</h3>
+        <p>Most photos are taking from my Samsung phone and may differ in quality</p>
     
         <div class="row">
             <div class="notSure-col">
-                <img src="images/Rveiyf5atbeZ80FcZRDkbiWOiygbvk7rpgShURPg.jpeg">
-                <h2>The Grange</h2>
-                <h3>AUCKLAND</h3>
-                <p>The Grange is more than just a gorgeously designed eatery - it’s a versatile, light-filled venue that outdoes <br>
-                itself in presentation, service and more. We’re committed to bringing you an experience like none other, catering to cocktail <br>
-                parties, private dinners, lunches and soirées. </p>
+                <img src="images/front grange.jpeg">
+                <h3>Auckland</h3>
+                <p>Auckland, based around 2 large harbours, is a major city in the north of New Zealand’s <br>
+                North Island. In the centre, the iconic Sky Tower has views of Viaduct Harbour, <br>
+                which is full of superyachts and lined with bars and cafes. Auckland Domain, the city’s oldest park, <br>
+                is based around an extinct volcano and home to the formal Wintergardens. Near Downtown, Mission Bay Beach <br>
+                has a seaside promenade.</p>
     
             </div>
             <div class="notSure-col">
                 <img src="images/TREE.jpeg">
-                <h2>Tree Church</h2>
                 <h3>Hamilton</h3>
-                <p>The TreeChurch, Ohaupo, is a unique and beautiful venue for weddings and other special occasions. The TreeChurch is set in 2 hectares of beautiful gardens which are also open for tours and visitors.</p>
+                <p>Ask a local Hamiltonian the number one thing you shouldn't miss in their city,<br>
+                    and there's a high chance they'll say the Hamilton Gardens. While traditional <br>
+                    botanical gardens focus on types of plants and are organized accordingly,<br>
+                    the Hamilton Gardens are laid out according to different kinds of garden design. <br>
+                    The effect is a showcase of the cultural meaning of gardens over the centuries.</p>
     
             </div>
             <div class="notSure-col">
-                <img src="images/queenstown skyline.jpg">
-                <h2>Skyline</h2>
-                <h3>Queenstown</h3>
-                <p>Embraced by one of New Zealand’s most iconic landscapes, Skyline Queenstown perches high above Lake Wakatipu, offering simply stunning views day or night. Accessed by scenic Gondola, Skyline is a truly unique venue for Queenstown – the journey is just as exciting as the destination. With decades of experience, you can relax safe in the knowledge that our team has everything in hand to make your next event an outstanding success.</p>
+                <img src="images/T.jpg">
+                <h3>Taupo</h3>
+                <p>Taupo, a town near the centre of New Zealand's North Island, <br>
+                is distinguished by its lakefront setting and outdoor sports ranging <br>
+                from fishing to jet-boating. The vast waters of Lake Taupo, a volcanic caldera, <br>
+                drain into the Huka Falls, dramatic, crystal-blue cascades reachable by hiking <br>
+                and biking trails. Surrounding Taupo are hot springs like those filling the Craters of the Moon reserve.</p>
     
             </div>
     
@@ -214,27 +299,8 @@
     <!---My Review needs some work -->
     
     <section class="review">
-        <h1>Reviews</h1>
-        <p>i use it hardly when i'm in my prison.
-            The box this comes in is 3 yard by 6 light-year and weights 11 megaton!!
-            I tried to electrocute it but got sweetmeat all over it.
-            The box this comes in is 5 kilometer by 6 yard and weights 18 gram.
-            I saw one of these in Cote d'Ivoire and I bought one.
-            heard about this on bouyon radio, decided to give it a try.
-            this wedding is dominant.
-            I saw one of these in Cote d'Ivoire and I bought one.
-            talk about irritation.
-            My co-worker Matthew has one of these. He says it looks gigantic.
-            My co-worker Bryton has one of these. He says it looks ragged.
-            I tried to attack it but got meatball all over it.
-            It only works when I'm Mauritania.
-            talk about anticipation!
-            The box this comes in is 3 inch by 6 centimeter and weights 15 ounce!
-            It only works when I'm Chad.
-            this wedding is honest.
-            My neighbor Lonnie has one of these. She works as a hobbit and she says it looks microscopic.
-            heard about this on dance-rock radio, decided to give it a try.
-            this wedding is dominant.</p>
+        <h1>What our clients have to say.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     
         <div class="row">
             <div class="review-col">
@@ -270,12 +336,12 @@
             </div>
     
     </section>
-    
+</main>    
     <!-- Call To Action---->
     <section class="cta">
         <h1>Enroll For Our Various Online Courses <br> Anywhere From The
         World</h1>
-        <a href="" class="hero-btn" >CONTACT US</a>
+        <a href="Contact Us.html" class="hero-btn">CONTACT US</a>
     </section>
     
     <!-- Footer---->
@@ -312,8 +378,4 @@
         }    
     
     </script>
-        
-
-</section>            
-</body>
-</html>
+}

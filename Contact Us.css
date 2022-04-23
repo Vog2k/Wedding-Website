@@ -7,7 +7,7 @@
 /*TOP OF THE WEBSITE-THE FIRST LINE OF ACTION-PICTURE */
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 101vh;
     position: relative;
     overflow: hidden;
 }
@@ -42,8 +42,8 @@
 /*THIS LINE BELOW DIMS THE BRIGHTNESS OF HE WEBPAGE*/
 .overlay{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    height: 101vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9));
     position: absolute;
     top: 0;
 }
@@ -52,7 +52,9 @@
     width: 150%;
     display: flex;
     align-items: center;
-    margin: 35px auto;
+    margin: 20px auto;
+    z-index: -1;
+    
  }
  /*THE LOGO IN THE TOP LEFT-HAND SIDE OF THE SCREEN*/
  .logo{
@@ -60,8 +62,9 @@
  }
  .logo img{
     padding: 0px 35px;
-    width: 120px;
+    width: 189px;
     cursor: pointer;
+    margin: 11px;
  }
  /*NOT INSERTED YET BUT THIS WILL HAVE THE LOGO OF A CART AND MORE */
  .menu-icons{
@@ -77,48 +80,50 @@
 /*DESCRIPTION IN THE CENTER*/
 .content{
     width: 60%;
-    margin: 160px auto 0;
+    margin: 330px auto 0;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.content hl{
+/*-----.content hl{
     font-size: 60px;
+    
 }
-.content h3{
+/*-----
     width: 80%;
     margin: 20px auto 100px;
     font-weight: 100;
     line-height: 25px;
-}
+}-----*/
 /*THE TWO BUTTONS IN THE MIDDLE OF THE SCREEN*/
 button{
     width: 200px;
     padding: 15px 0;
     text-align: center;
     margin: 0 10px;
-    border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #fe7250;
-    background: #fe7250;
+    border: 1px solid rgba(255, 217, 0, 0.651);
+    background: transparent;
     color: #fff;
     cursor: pointer;
-    transition: 0.8s;
-        
-    
+    transition: 0.8s; 
+    border-style: solid;
+    box-shadow: 2px solid black;
 }
 button:hover{
-    background: black;
+    background: rgba(37, 36, 30, 0.651);
     border: 2px solid #fff;
 }
 /*BELOW THIS LINE IS NEW CONTENT */
 
 nav{
 
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    
+    
 }
 nav img{
     width: 150px;
@@ -131,7 +136,7 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 12px 12px;
+    padding: 12px 22px;
     position: relative;
 
 }
@@ -140,12 +145,19 @@ nav img{
     text-decoration: none;
     font-size: 13px;
     
+    
 }
+.nav-links ol{
+    display: inline-block;
+    padding: 2px 2px;
+    /*------LOCATIONS INCLUDING 3 ROWS -----border: 3.1px solid #ffffff;
+    background: transparent;/*------LOCATIONS INCLUDING 3 ROWS -----*/
+}    
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #b3b61d;
+    background: rgba(255, 217, 0, 0.651);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -164,18 +176,18 @@ nav .fa{
     }
     .nav-links ul li{
         display: block;
+        height: 50px;
     }
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #000000;
         height: 100vh;
-        width: 150px;
-        top: 0;
-        right: -200px;
+        width: 190px;
+        top: -62px;
+        right: -419px auto;
         text-align: left;
-        z-index: 2;
+        z-index: -1;
         transition: 0.5s;
-
     }
     nav .fa{
         display: block;
@@ -185,7 +197,7 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links ul{
-        padding: 30px;
+        padding: 5px;
 
     } 
 }
@@ -220,6 +232,7 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    cursor: pointer;
 }
 h3{
     text-align: center;
@@ -251,15 +264,18 @@ h3{
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    
 }
 .services-col img{
     width: 100%;
     height: 100%;
     display: block;
+    z-index: 1;
 
+/*----Lower the number the lower the item becomes on site-----*/
 }
 .layer{
-    background: transparent;
+    z-index: 1;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -269,7 +285,8 @@ h3{
 }
 
 .layer:hover{
-    background: rgba(238, 87, 87, 0.7);
+    z-index: 1;
+    background: rgba(255, 217, 0, 0.356)
 }
 .layer h3{
     width: 100%;
@@ -323,7 +340,7 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 250px;
 }
 .review-col{
     flex-basis: 44%;
@@ -419,4 +436,195 @@ h3{
 hero-btn:hover{
     background: black;
     border: 10px solid #fff;
+}
+/*----- TESTING BELOW-----*/
+/*-----FADE IN AND OUT-----*/
+.wrapper-text{
+    text-align: center;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 5px;
+    font-family: poppins;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: ani2 8.5s ease-out forwards;
+}
+.wrapper-text h2,
+.wrapper-text h4{
+    opacity: 0;
+    margin: 0;
+}
+.wrapper-text h2{
+    animation: ani2 0.75s ease-out 3s forwards;
+}
+.wrapper-text h4{
+    animation: ani2 0.75s ease-out 3s forwards;
+    animation: ani2 0.75s ease-out 4s forwards;
+    /*-----FADE IN AND OUT-----*/
+}
+/*-----FADE IN AND OUT-----*/
+.wrapper-text1{
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: poppins;
+    opacity: 0;
+    animation: ani2 2.5s ease-out forwards;
+}
+.wrapper-text1 h2,
+.wrapper-text1 h4{
+    opacity: 0;
+    margin: 0;
+}
+.wrapper-text1 h2{
+    animation: ani2 0.75s ease-out 3s forwards;
+}
+.wrapper-text1 h4{
+    animation: ani2 0.75s ease-out 3s forwards;
+    animation: ani2 0.75s ease-out 4s forwards;
+}/*-----FADE IN AND OUT-----*/
+@keyframes ani2{
+    100%{
+        opacity: 1;
+    }
+}
+    
+@keyframes anil{
+    100%{
+        transform: scale (1.55);
+    }
+}
+  #navbar {
+    background-color: rgba(0, 0, 0, 0.966);
+    position: fixed;
+    top: -180px;
+    width: 100% auto;
+    display: center;
+    transition: top 0.6s;
+    z-index: 5;
+}
+  
+#navbar a{
+    float: left;
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    padding: 6px 101.59px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  #navbar a:hover {
+    background-color:rgba(255, 217, 0, 0.911);
+    color: rgb(0, 0, 0);
+  }
+  @media(max-width: 700px){
+    .text-book h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    #navbar{
+        position: absolute;
+        background: #000000;
+        height: 100vh;
+        width: 130px;
+        top: 1000px;
+        right: -300px;
+        text-align: left;
+        z-index: 5;
+        transition: 0.5s;
+    }
+    #navbar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    #navbar ul{
+        padding: 10px;
+
+    } 
+}
+*{
+    box-sizing: border-box;
+}
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+}
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+
+        height: 100%;
+    }
 }
