@@ -2,8 +2,8 @@
 <head>
     <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Weddings & Events</title>
-    <link rel="stylesheet" href="Login.css">
+    <title>Auckland W&E</title>
+    <link rel="stylesheet" href="Auckland.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
@@ -12,72 +12,116 @@
 <head>
 <body onload="slider()">
     <div class="banner">
-        <div class="slider">
-             <img src="images/kamana.jpg" id="slideImg">
       </div>
         <div class="overlay">
             <div class="navbarz">
-                <!--LOGO-->
                 <div class="logo">
+                    <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
                     <a href="Home.html">
-                    <img src="images/pngwing.com.png">
+                    <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
                     </a>
+                        
                 </div>
-                <!--LOGO-->
+
                 <section class="header">
                     <nav>
                         <div class="nav-links" id="navLinks">
                                     <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
                                 <ul>
-                                    <li><a href="Home.html">HOME</a></li>
+                                    <!--<li><a href="">HOME</a></li>-->
+                                   
                                     <li><a href="Venues.html">VENUES</a></li>
                                     <li><a href="Gallery.html">GALLERY</a></li>
                                     <li><a href="Calender.html">CALENDER</a></li>
                                     <li><a href="Contact Us.html">CONTACT US</a></li>
                                     <li><a href="About Us.html">ABOUT US</a></li>
-                                    <li><a href="REVIEWS.html">REVIEWS</a></li>
                                     <li><a href="EXPLORE.html">EXPLORE</a></li>
-                                    <!--LINES ABOVE MAKE UP THE NAVBAR ON THE SITE-->    
+                                    
                                 </ul>
                             </div>
                         </nav>
-                    </div> 
-</section>
-<br>
-<section>
+                        <!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar -->
+            </section>
+    <!--BELOW BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
+            </div>
 
-            <div id="login-box">
-                <div class="left-box">
-                    <h1> Sign Up</h1>
-        
-                        <input type="text" name="username" placeholder="Username"/>
-                        <input type="text" name="email" placeholder="Email"/>
-                        <input type="text" name="password" placeholder="Password"/>
-        
-                        <input type="text" name="Password2" placeholder="RetypePassword"/>
-        
-                        <input type="submit" name="signup-button" value="Sign Up"/>
-                        
-                    </div>
-                    <div class="right-box">
-                        <span class="signinwith">Sign in with<br/>Social Network
-                        </span>
-        
-                    <button class="social facebook">Log in with Facebook</button>
-                    <button class="social twitter">Log in with Twitter</button>
-                    <button class="social google">Log in with Google+</button>
+                <div class="content">
+                    <div style="position: relative;bottom: -160px;">
+                        <div class="wrapper-text">
+                            
+                            <h1>AND SO THE ADVENTURE BEGINS</h1>
+                        </div>
+                    <!--<h3>Plan your future now </h3>-->
+                </div>
+
                     
+                        <div style="position: relative;bottom: -160px;">
+                        <button type="button"><a href="EXPLORE.html" style="text-decoration: none; color: white;" class="button">Explore</a></button>
+                 
+                        <button type="button"><a href="REVIEWS.html" style="text-decoration: none; color: white;" class="button">Reviews</a></button>
+                        </div>
                     </div>
-                    <div class="or"><P>OR</P></div>
-                </div>    
-
-
 
             </div>      
         </div>
-    </section>
+    </div>
+<!--ABOVE BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
+
+
+    <!--BELOW Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "images/lukes.jpg",
+            "images/riverhead.jpg",
+            "images/ohariu-farm-wedding-3.jpg",
+            "images/IMG_5550.jpg",
+            "images/Seating.jpg",
+            "images/image12.jpg",
+            "images/Kamana.jpg"
+            );
+
+        var len = images.length;
+        var i = 0;
+        
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',4000);
+        }
+
+    </script>
+            <!--ABOVE Slide Show Images --><!--Slide Show Images --><!--Slide Show Images -->
+
+
 </head>
 <main>
+
+<div id="navbar">
+    <div style="z-index: -1">
+        <a href="Home.html" id="Home">Home</a>
+        <a href="Venues.html" id="Venues">Venues</a>
+        <a href="Calender.html" id="Calender">Calender</a>
+        <a href="About Us.html" id="About Us">About Us</a>
+      </div>
+</div>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 140) {
+        document.getElementById("navbar").style.top = "0px";
+      } else {
+        document.getElementById("navbar").style.top = "-60px";
+      }
+    }
+    </script>
 </main>    
     <!-- Call To Action---->
     <section class="cta">

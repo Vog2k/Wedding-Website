@@ -7,7 +7,7 @@
 /*TOP OF THE WEBSITE-THE FIRST LINE OF ACTION-PICTURE */
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 101vh;
     position: relative;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@
 /*THIS LINE BELOW DIMS THE BRIGHTNESS OF HE WEBPAGE*/
 .overlay{
     width: 100%;
-    height: 100vh;
+    height: 101vh;
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9));
     position: absolute;
     top: 0;
@@ -52,7 +52,7 @@
     width: 150%;
     display: flex;
     align-items: center;
-    margin: 35px auto;
+    margin: 20px auto;
     z-index: -1;
     
  }
@@ -62,8 +62,9 @@
  }
  .logo img{
     padding: 0px 35px;
-    width: 120px;
+    width: 189px;
     cursor: pointer;
+    margin: 11px;
  }
  /*NOT INSERTED YET BUT THIS WILL HAVE THE LOGO OF A CART AND MORE */
  .menu-icons{
@@ -79,9 +80,9 @@
 /*DESCRIPTION IN THE CENTER*/
 .content{
     width: 60%;
-    margin: 190px auto 0;
+    margin: 330px auto 0;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 /*-----.content hl{
@@ -307,8 +308,7 @@ h3{
 /*------ Not Sure -----*/
 
 .notSure{
-    width: 100% auto;
-    height: 100% auto;
+    width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -322,9 +322,8 @@ h3{
 }
 .notSure-col img{
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-radius: 10px;
-    display: block;
 }
 .notSure-col p{
     padding: 0;
@@ -550,4 +549,82 @@ hero-btn:hover{
 
     } 
 }
+*{
+    box-sizing: border-box;
+}
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+}
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
 
+        height: 100%;
+    }
+}
