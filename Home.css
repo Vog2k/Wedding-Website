@@ -202,6 +202,7 @@ nav .fa{
 h1{
     font-size: 36px;
     font-weight: 600;
+    text-decoration: none;
 }
 p{
     color: black;
@@ -209,6 +210,9 @@ p{
     font-weight: 600px;
     line-height: 22px;
     padding: 10px;
+    text-decoration: none;
+    text-underline-position: none;
+    
 }
 .row{
     margin-top: 5%;
@@ -230,6 +234,8 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    text-decoration: none;
+    color: black;
 }
 .locations-col:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -238,12 +244,8 @@ h3{
     .row{
         flex-direction: column;
     }
-
 }
-
 /*-------- services------*/
-
-
 .services{
     width: 80%;
     margin: auto;
@@ -274,11 +276,13 @@ h3{
     top: 0;
     left: 0;
     transition: 0.5s;
+
 }
 
 .layer:hover{
     z-index: 1;
-    background: rgba(255, 217, 0, 0.356)
+    background: rgba(255, 217, 0, 0.356);
+    cursor: pointer;
 }
 .layer h3{
     width: 100%;
@@ -342,12 +346,11 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 150px;
+    margin-top: 80px;
 }
 .review-col{
     flex-basis: 44%;
     border-radius: 10px;
-    margin-bottom: 5%;
     text-align: left;
     background: #fff3f3;
     padding: 25px;
@@ -381,11 +384,10 @@ h3{
 
 .cta{
     margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(download.jpg);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.007)), url(images/pexels-katarzyna-dzierżyńska-1646730.jpg);
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
     text-align: center;
     padding: 100px 0;
     text-decoration: none;
@@ -400,17 +402,6 @@ h3{
          font-size: 24px;
     }     
 }
-/*----- footer -----*/
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
 .icons .fa{
     color: #f44336;
     margin: 0 13px;
@@ -420,25 +411,6 @@ h3{
 .fa-heart-o{
     color: #f44336;
 }
-.hero-btn{
-    width: 1200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 0 10px;
-    border-radius: 40px;
-    font-weight: bold;
-    border: 5px solid #fe7250;
-    background: #fe7250;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.8s;
-    text-decoration: none;
-}
-hero-btn:hover{
-    background: black;
-    border: 10px solid #fff;
-}
-/*----- TESTING BELOW-----*/
 /*-----FADE IN AND OUT-----*/
 .wrapper-text{
     text-align: center;
@@ -558,37 +530,36 @@ hero-btn:hover{
 /*CHECK BOX*/
 
 .checklist{
-    max-width: 1360px;
-    margin: 50px auto;
     width: 100%;
+    background-color:  #fff3f3;
+    text-align: center;
+    padding: 100px 0;
+    box-sizing: border-box;
+    margin-top: 100px;
+
 
 }
 .checklist img{
     top:03%;
     left:80%;
     border-radius: 5%;
+    
 }
 .checklist1{
     display: inline-block;
     justify-content: space-evenly;
     flex-direction: column;
 }
-
 .checklist h4{
     font-size: 25px;
     text-align:center;
     left: 10px;
-    
-
 }
 .checklist h3{
     width: 160px;
     font-size: 15px;
     right: 140px;
-
-
 }
-
 .buttonz{
     height: 50px;
     width: 500px;
@@ -596,7 +567,7 @@ hero-btn:hover{
     text-align: center;
     margin: 50px 10px;
     font-weight: bold;
-    border: 2px solid rgba(255, 153, 0, 0.911);
+    border: 1px solid rgba(255, 217, 0, 0.911);
     background: rgba(78, 75, 75, 0.685);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -609,4 +580,73 @@ hero-btn:hover{
 .buttonz:hover{
     background: rgba(173, 173, 173, 0.87);
     border: 2px solid #fff;
+}
+/*----- footer -----*/
+.footer{
+    width: 100%;
+    min-height: auto;
+    background-color:  #fff3f3;
+    text-align: center;
+    padding: 90px 0;
+    box-sizing: border-box;
+    
+    
+}
+.footer h5{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer h4{
+    text-align: left;
+    font-size: small;
+    -webkit-box-direction: normal;
+    box-sizing: content-box;
+    font-style: normal;
+    word-spacing: normal;
+    padding: 2px;
+
+}
+.credits{
+    display: flex; 
+    height: 130px;
+
+}
+.Leftbox{
+    float: right;
+    height: 70px;
+    width: 23%;
+    padding: 0 10px;
+
+}
+.rightbox{
+    float: left;
+    height: 70px;
+    width: 23%;
+    padding: 0 10px;
+
+}
+.middlebox{
+    height: 70px;
+    width: 23%;
+    padding: 0 10px;
+}
+
+.BOTTEM{
+    display: grid;
+    padding: 20px;
+    height: 20px;
+
+}
+.logo1{
+    flex-basis: 15%;
+    top:2px;
+    z-index: 1;
+    position: absolute;
+ }
+ .logo1 img{
+
+    width: 150px;
+    cursor: pointer;
+
 }

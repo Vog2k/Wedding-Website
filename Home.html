@@ -126,13 +126,27 @@
       }
     }
     </script>
+
+        <!-----JavaAcript for Toggle Menu------>
+        <script>
+    
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }    
+        
+        </script>
+
 <!--Locations class -->
 <section class="Locations">
         <h1>Locations</h1>
         <p>Check out the beautiful views here!</p>
     
         <div class="row">
-            <a href="Venues.html">
+            <a href="Venues.html"style="text-decoration: none;">
             <div class="locations-col">
                 <h3>North Island</h3>
                 <div class="wrapper-text1">
@@ -150,7 +164,7 @@
                 </div>
             </a>
             </div>
-            <a href="Venues.html">
+            <a href="Venues.html"style="text-decoration: none;">
             <div class="locations-col">
                     <h3>South Island</h3>
                     <div class="wrapper-text1">
@@ -164,7 +178,7 @@
                 </div>
             </a>
             </div>
-            <a href="Venues.html">
+            <a href="Venues.html"style="text-decoration: none;">
             <div class="locations-col">
                 <h3>Outer Islands</h3>
                 <div class="wrapper-text1">
@@ -184,7 +198,7 @@
 
 </section>
     
-    <!--Wanaka-->
+
 <section class="services">
         
         <h1>Our Services</h1>
@@ -257,7 +271,7 @@
             <div class="notSure-col">
                 <img src="images/Carrington.jpg">
                 
-                <h3><a href="https://www.carrington.co.nz/events/weddings/">Northland Karikari</a></h3>
+                <h3><a href="https://www.carrington.co.nz/events/weddings/"style="text-decoration: none;"></a>Northland Karikari</a></h3>
             
                 <p>Experience a wedding venue like no other and make your special day an event to remember as you celebrate surrounded by the beauty
                 and stunning scenery of the heart of Northland.
@@ -270,7 +284,7 @@
         
             <div class="notSure-col">
                 <img src="images/TREE.jpeg">
-                <h3><a href="https://www.treechurch.co.nz/">Hamilton Ohaupo</a></h3>
+                <h3><a href="https://www.treechurch.co.nz/"style="text-decoration: none;"></a>Hamilton Ohaupo</a></h3>
                 <p>Ask a local Hamiltonian the number one thing you shouldn't miss in their city,
                     and there's a high chance they'll say the
                     Hamilton Gardens.While traditional botanical gardens focus on 
@@ -282,7 +296,7 @@
             </div>
             <div class="notSure-col">
                 <img src="images/taupo-wedding-photographers-1-2.jpg">
-                <h3><a href=https://www.oretivillage.com/weddings/?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWDecIENcjfmnwTqweAHLuHf6TRFixymsWXgymJ_rvviU0ir81ZK5AhoCshQQAvD_BwE">Taupo Oreti</a></h3>
+                <h3><a href="https://www.oretivillage.com/"style="text-decoration: none;"></a>Taupo Oreti</a></h3>
                 
                 <p>Taupo, a town near the centre of New Zealand's North Island, is distinguished
                 by its lakefront setting and outdoor sports ranging
@@ -297,42 +311,9 @@
 </section>
     
     <!---My Review needs some work -->
-    
-    <section class="review">
-        <hr>
-        <h1>What our clients have to say.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    
-        <div class="row">
-            <div class="review-col">
-                <img src="images/jan.jpg">
-                <div>
-                <p>Love it, cannot fault it at all, sent out date changes recently and reset all the invites so guests have to reply again for new date.</p>
-                    <h3>Jason Lakin</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                    
-                </div>
-            </div>
-            <div class="review-col">
-                <img src="images/stella.jpg">
-                <div>
-                    <p>I’m enjoying it so far. I think it’s really reasonable for the top package and when I’ve been stuck you get assistance from the tech team. So far no complaints! .</p>
-                    <h3>Stella Leta </h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-            </div>
-    
-    </section>
+<hr>
 
-    <hr>
+
 <section class="checklist">
     
     <img src="images/ready.png">
@@ -345,17 +326,50 @@
         <button class="buttonz">Check List</button>     
 </section>
 
+<section class="review">
+    <hr>
+    <h1>What our clients have to say.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<hr>
+    <div class="row">
+        <div class="review-col">
+            <img src="images/jan.jpg">
+            <div>
+            <p>Love it, cannot fault it at all, sent out date changes recently and reset all the invites so guests have to reply again for new date.</p>
+                <h3>Jason Lakin</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/stella.jpg">
+            <div>
+                <p>I’m enjoying it so far. I think it’s really reasonable for the top package and when I’ve been stuck you get assistance from the tech team. So far no complaints! .</p>
+                <h3>Stella Leta </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+
+</section> 
+
+
     
 </main>  
-
-
+</header>       
+<footer>
 
     <!-- Call To Action---->
     <section class="cta">
         <h1>Give us a call or message! We are happy to help! </h1>
-        <a href="Contact Us.html" class="hero-btn">CONTACT US</a>
+        <a href="Contact Us.html"style="text-decoration: none;" class="buttonz">CONTACT US</a>
     </section>
 
 
@@ -363,7 +377,7 @@
     <!-- Footer---->
     
     <section class="footer">
-        <h4>About Me</h4>
+        <h5>About Me</h5>
         <p>This is simply just a project i wanted to complete.Any photos or videos i have used are not owned by me and but simply can be found this is moreless a website to assist in the planning of a wedding.
         This website is also free and used as a project for my portfolio. So thank you for visting and please share to friends and family.</p>
     
@@ -381,20 +395,51 @@
                 <i class="fa fa-linkedin"></i></a>
             
             </div>
-            <p>Made With <i class="fa fa-heart-o"></i> Timothy Leatau </p>
+
+<section class="credits">
+    <div class="leftbox">
+            <h4>Decorations</h4>
+            <h4>Proposal planning</h4>
+            <h4>Wedding Concierge</h4>
+            <h4>Pre/Post Photography</h4>
+            <h4>Hair and Make up</h4>
+            <h4>Renewal of vows</h4>
+            <h4>Checklist</h4>
+        </div>
+        <div class="middlebox">
+            <h4>Northland</h4>
+            <h4>Southland</h4>
+            <h4>Outter Islands</h4>
+            <h4>Explore</h4>
+            <h4>Reviews</h4>
+            <h4>Wedding Dress Hire</h4>
+        </div>
+        <div class="rightbox">
+            <h4>Venues</h4>
+            <h4>Gallery</h4>
+            <h4>CALENDER</h4>
+            <h4>ABOUT US</h4>
+            <h4>EXPLORE</h4>
+            <h4>Contact Us</h4>
+        </div>
+
+        <div class="BOTTEM">
+            <p>Kiwi designed website </p>
+
+            <p>© 2022 Weddings & Events Ltd.</p>
+        </div>
+
+        <div class="logo1">
+            <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
+            <a href="Home.html">
+            <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
+            </a>
+        
     </section>
-    
-    
-    <!-----JavaAcript for Toggle Menu------>
-    <script>
-    
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }    
-    
-    </script>
-}
+
+
+</footer>  
+</Body>  
+</Html>  
+
+
