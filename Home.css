@@ -398,7 +398,7 @@ h3{
     display: block;
     z-index: 1;
     border-radius: 9px;
-    box-shadow: 9px 10px 3px 1px rgb(0, 0, 0);
+    box-shadow: 2px 1px 3px 1px rgb(0, 0, 0);
     padding: -20px;
     
 }
@@ -442,14 +442,14 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .review-col{
     flex-basis: 44%;
     border-radius: 10px;
     text-align: left;
     background: #fff3f3;
-    padding: 25px;
+    padding: 45px;
     cursor: pointer;
     display: flex;
 }
@@ -629,42 +629,54 @@ h3{
 /*CHECK BOX*/
 
 .checklist{
-    width: 100%;
-    background-color:  #fff3f3;
+    width: 75%;
+    margin-bottom: 100px;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px;
     box-sizing: border-box;
-    margin-top: 100px;
+    border-radius: 10px;
+    background: #fff3f3;
+    margin-right: 50%;
+    margin-left: 12.5%;
 
+}
+.mid h1{
+
+    padding-bottom: -300px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+    bottom: -100px;
+    
 
 }
 .checklist img{
-    top:03%;
-    left:80%;
-    border-radius: 5%;
-    
-}
-.checklist1{
-    display: inline-block;
-    justify-content: space-evenly;
-    flex-direction: column;
+    width: 50%;
+    height: 40%;
+    display: block;
+    z-index: 1;
+    display: inline;
+    float: left;
+    padding: 20px;
 }
 .checklist h4{
     font-size: 25px;
-    text-align:center;
-    left: 10px;
+    vertical-align:middle;
 }
 .checklist h3{
-    width: 160px;
+    width: 100px;
     font-size: 15px;
-    right: 140px;
+    text-align: center;
+    display: inline;
+
 }
-.buttonz{
+.buttonz1{
     height: 50px;
-    width: 500px;
+    width: 150px;
     padding: 15px;
     text-align: center;
-    margin: 50px 10px;
+    margin: 30px 80px;
     font-weight: bold;
     border: 1px solid rgba(255, 217, 0, 0.911);
     background: rgba(78, 75, 75, 0.685);
@@ -674,6 +686,27 @@ h3{
     border-style: solid;
     box-shadow: 2px solid black;
     transition: 0.85s;
+}
+.buttonz{
+    height: 50px;
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    margin: 50px 80px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 217, 0, 0.911);
+    background: rgba(78, 75, 75, 0.685);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    border-style: solid;
+    box-shadow: 2px solid black;
+    transition: 0.85s;
+
+}
+.buttonz1:hover{
+    background: rgba(173, 173, 173, 0.87);
+    border: 2px solid #fff;
 }
 
 .buttonz:hover{
