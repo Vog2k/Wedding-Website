@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
 }
 /*TOP OF THE WEBSITE-THE FIRST LINE OF ACTION-PICTURE */
 .banner{
@@ -11,7 +10,6 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    overflow-x: hidden;
 }
 /*SLIDER IS APART OF THE LITTLE SLIDE SHOW IN THE BACKGROUND*/
 .slider{
@@ -19,7 +17,78 @@
     height: 100vh;
     position: absolute;
     top: 0;
-    overflow-x: hidden;   
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa1{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+svg {
+    color: rgb(0, 0, 0);
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+  }
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa1{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+    animation: ease-in-out;
+    animation: smooth;
 }
 @keyframes fade{
     0%{
@@ -42,7 +111,6 @@
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9));
     position: absolute;
     top: 0;
-    overflow-x: hidden;
 }
 /*SHOWS THE WORD AT THE TOP THAT ARE CLICKABLE*/
 .navbarz{
@@ -51,20 +119,17 @@
     align-items: center;
     margin: 35px auto;
     z-index: -1;
-    overflow-x: hidden;
     
  }
  /*THE LOGO IN THE TOP LEFT-HAND SIDE OF THE SCREEN*/
-  /*DO NOT CHANGE*/
  .logo{
     flex-basis: 15%;
  }
  .logo img{
     padding: 0px 35px;
-    width: 190px;
+    width: 120px;
     cursor: pointer;
- }
-   /*DO NOT CHANGE*/
+}
  /*NOT INSERTED YET BUT THIS WILL HAVE THE LOGO OF A CART AND MORE */
  .menu-icons{
     flex: 1;
@@ -95,17 +160,18 @@
     line-height: 25px;
 }-----*/
 /*THE TWO BUTTONS IN THE MIDDLE OF THE SCREEN*/
+
 button{
     width: 200px;
     padding: 15px 0;
     text-align: center;
     margin: 0 10px;
     font-weight: bold;
-    border: 1px solid rgba(255, 217, 0, 0.651);
+    border: 1px solid rgba(255, 217, 0, 0.911);
     background: transparent;
     color: #fff;
     cursor: pointer;
-    transition: 0.8s; 
+    transition: 0.2s; 
     border-style: solid;
     box-shadow: 2px solid black;
 }
@@ -133,7 +199,6 @@ nav img{
     display: inline-block;
     padding: 12px 22px;
     position: relative;
-
 }
 .nav-links ul li a{
     color: #fff;
@@ -143,6 +208,8 @@ nav img{
 .nav-links ol{
     display: inline-block;
     padding: 2px 2px;
+    /*------LOCATIONS INCLUDING 3 ROWS -----border: 3.1px solid #ffffff;
+    background: transparent;/*------LOCATIONS INCLUDING 3 ROWS -----*/
 }    
 .nav-links ul li::after{
     content: '';
@@ -159,6 +226,7 @@ nav img{
 nav .fa{
     display: none;
 }
+
 @media(max-width: 700px){
     .text-book h1{
         font-size: 20px;
@@ -187,10 +255,10 @@ nav .fa{
     }
     .nav-links ul{
         padding: 5px;
-
     } 
 }
 /*------LOCATIONS INCLUDING 3 ROWS -----*/
+
 .Locations{
     width: 80%;
     margin: auto;
@@ -200,18 +268,23 @@ nav .fa{
 h1{
     font-size: 36px;
     font-weight: 600;
+    text-decoration: none;
 }
 p{
     color: black;
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 600px;
     line-height: 22px;
     padding: 10px;
+    text-decoration: none;
+    text-underline-position: none;
+    
 }
 .row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    
 }
 .locations-col{
     flex-basis: 31%;
@@ -227,6 +300,9 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    text-decoration: none;
+    color: black;
+
 }
 .locations-col:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -235,12 +311,8 @@ h3{
     .row{
         flex-direction: column;
     }
-
 }
-
 /*-------- services------*/
-
-
 .services{
     width: 80%;
     margin: auto;
@@ -260,6 +332,7 @@ h3{
     height: 100%;
     display: block;
     z-index: 1;
+    
 
 /*----Lower the number the lower the item becomes on site-----*/
 }
@@ -271,11 +344,13 @@ h3{
     top: 0;
     left: 0;
     transition: 0.5s;
+
 }
 
 .layer:hover{
     z-index: 1;
-    background: rgba(255, 217, 0, 0.356)
+    background: rgba(255, 217, 0, 0.356);
+    cursor: pointer;
 }
 .layer h3{
     width: 100%;
@@ -300,69 +375,142 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding: 120px;
+    
 }
 .notSure-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
+    flex-basis: 5%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
 
 }
+.responsive {
+        max-width: 100%;
+        height: auto;
+        image-rendering: optimizeQuality;
+      }
 .notSure-col img{
     width: 100%;
-    height: 80%;
-    border-radius: 10px;
-}
-.notSure-col p{
-    padding: 0;
+    height: 75%;
+    display: block;
+    z-index: 1;
+    border-radius: 9px;
+    box-shadow: 2px rgb(0, 0, 0);
+    padding: -20px;
+    
 }
 .notSure-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+.notSure-col p{
+    padding-top: -80px;
+    font-size: 18px;
+    padding-bottom: 60px;
+
+}
+.button1{
+    height: 50px;
+    width: 180px;
+    padding: 5px;
+    text-align: center;
+    margin: -50px 10px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 217, 0, 0.911);
+    background: rgb(124, 124, 124);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    border-style: solid;
+    box-shadow: 3px solid black;
+    transition: 0.85s;
+}
+.button1:hover{
+    background: rgba(173, 173, 173, 0.87);
+    border: 2px solid #fff;
+}
+
+/*----Revies Section-----*/
+
+.review{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.review-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    text-align: left;
+    background: #fff3f3;
+    padding: 45px 20px;
+    cursor: pointer;
+    display: flex;
+}
+.review-col img{
+    height: 50px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 100%;
+}
+.review-col p{
+    padding: 0;
+}
+.review-col h3{
+    margin-top: 15px;
     text-align: left;
 }
-/*----- footer -----*/
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
+.review-col .fa{
+    color: #f44336;
 }
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+@media (max-width: 700px){
+    .testimonial-col img{
+        margin-left: 5px;
+        margin-right: 30px;
+    }
+}
+/*----- call to action -----*/
+
+.cta{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.007)), url(images/pexels-katarzyna-dzierżyńska-1646730.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    text-decoration: none;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}    
+@media(max-width: 700px){
+    .cta hl{
+         font-size: 24px;
+    }     
+}
+.line{
+    width: 2px;
+
 }
 .icons .fa{
     color: #f44336;
     margin: 0 13px;
     cursor: pointer;
-    padding: 18px 0;
-
+    padding: 25px 2px;
 }
-
 .fa-heart-o{
     color: #f44336;
-
 }
-.hero-btn{
-    width: 1200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 0 10px;
-    border-radius: 40px;
-    font-weight: bold;
-    border: 5px solid #fe7250;
-    background: #fe7250;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.8s;
-}
-hero-btn:hover{
-    background: black;
-    border: 10px solid #fff;
-}
-/*----- TESTING BELOW-----*/
 /*-----FADE IN AND OUT-----*/
 .wrapper-text{
     text-align: center;
@@ -424,7 +572,7 @@ hero-btn:hover{
     background-color: rgba(0, 0, 0, 0.966);
     position: fixed;
     top: -180px;
-    width: 100% auto;
+    width: 100%;
     display: center;
     transition: top 0.6s;
     z-index: 5;
@@ -435,9 +583,12 @@ hero-btn:hover{
     display: flex;
     color: #ffffff;
     text-align: center;
-    padding: 6px 101.59px;
+    padding: 6px 118.99px;
+    
     text-decoration: none;
     font-size: 17px;
+    max-width: 100%;
+    
 }
   
   #navbar a:hover {
@@ -457,7 +608,7 @@ hero-btn:hover{
         height: 100vh;
         width: 130px;
         top: 1000px;
-        right: -300px;
+        right: 10px;
         text-align: left;
         z-index: 5;
         transition: 0.5s;
@@ -472,7 +623,186 @@ hero-btn:hover{
     #navbar ul{
         padding: 10px;
 
-    }
+    } 
+}
+#more{
+    display: none;
+}
+
+
+/*CHECK BOX*/
+
+.checklist{
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff3f3;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: relative;
+    padding: 50px;
+
+
+}
+.checklist img{
+    float: left;
+    max-width: 100%;
+    height: auto;
+    display: center;
+    z-index: 1;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.checklist h4{
+    font-size: 25px;
+    padding: 20px;
+    position: relative;
+}
+.checklist h3{
+    font-size: 15px;
+    text-align: left;
+    display: inline;
+    position: relative;
+
+}
+.buttonz1{
+    height: 50px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    margin: 30px 80px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 217, 0, 0.911);
+    background: rgba(78, 75, 75, 0.685);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    border-style: solid;
+    box-shadow: 2px solid black;
+    transition: 0.85s;
+}
+.buttonz{
+    height: 50px;
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    margin: 50px 80px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 217, 0, 0.911);
+    background: rgba(78, 75, 75, 0.685);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    border-style: solid;
+    box-shadow: 2px solid black;
+    transition: 0.85s;
+
+}
+.buttonz1:hover{
+    background: rgba(173, 173, 173, 0.87);
+    border: 2px solid #fff;
+}
+
+.buttonz:hover{
+    background: rgba(173, 173, 173, 0.87);
+    border: 2px solid #fff;
+}
+/*----- footer -----*/
+.footer{
+    width: 100%;
+    min-height: auto;
+    background-color:  #fff3f3;
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+
+    
+    
+}
+
+.p1{
+    font-weight: 600;
+    font-size: 18px;
+    top: -20px;
+    position: relative;
+    
+}
+.oop{
+    width: 80%;
+    display: contents;
+    position: absolute;
+    
+}
+.footer h5{
+    top: -20px;
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer h4{
+    text-align: left;
+    font-size: 15px;
+    -webkit-box-direction: normal;
+    font-style: normal;
+    word-spacing: normal;
+    padding: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+.credits{
+    display: flex; 
+    height: 140px;
+    width: 80%;
+    
+
+}
+.Leftbox{
+    float: right;
+    height: 70px;
+    width: 23%;
+    
+    
+
+}
+.rightbox{
+    float: right;
+    height: 70px;
+    width: 23%;
+    
+
+}
+.middlebox{
+    height: 70px;
+    width: 23%;
+    padding-left: 50px;
+}
+.middlebox1{
+    height: 70px;
+    width: 23%;
+    padding: 0 10px;
+}
+
+
+.BOTTEM{
+    margin-bottom: 10px;
+}
+.logo1{
+    flex-basis: 15%;
+    z-index: 1;
+    position: absolute;
+ }
+ .logo1 img{
+
+    width: 160px;
+    cursor: pointer;
+    bottom: auto;
+    display: center;
+    margin-top: -50px;
 }
 .back-video{
     position: absolute;
@@ -497,64 +827,67 @@ hero-btn:hover{
 
         height: 100%;
     }
-}* {
-    box-sizing: border-box;
+}
+.header1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
   }
   
-  /* Center website */
-.mainz{
-    max-width: 1000px;
+  .header1 h1 {
+    padding-top: 100px;
+    padding-top: -webkit-calc(50vh - 113px);
+    padding-top: expression(50vh - 113px);
+    padding-top: -moz-calc(50vh - 113px);
+    padding-top: -o-calc(50vh - 113px);
+    padding-top: calc(50vh - 113px);
+    font-size: 7em;
+    font-weight: 100;
+  }
+  
+  .header1 h2 {
+    font-size: 2em;
+  }
+  
+  .header1 span.animated {
+    position: absolute;
     margin: auto;
-}
-.mainz h1{
-      display: block;
-      text-align: center;
-      
-}
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    background: #fff;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
   
-.rowz{
-    margin: 8px -16px;
-}
-  
-  /* Add padding BETWEEN each column */
-.rowz,
-.rowz > .column{
-    padding: 8px;
-}
-  
-  /* Create four equal columns that floats next to each other */
-.columnz{
-    float: left;
-    width: 50%;
-}
-  /* Clear floats after rows */ 
-.rowz:after{
+  .header1 span::before,
+  .header1 span::after {
+    position: absolute;
+    top: -23px;
     content: "";
-    display: table;
-    clear: both;
-}
-  
-  /* Content */
-.contentz{
-    background-color: white;
-    padding: 10px;
-    
-}
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px){
-    .columnz {
-      width: 50%;
-    }
+    height: 30px;
+    width: 4px;
+    border-radius: 2px;
+    background: #fff;
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .columnz {
-      width: 100%;
-    }
+  .header1 span::before {
+    left: -10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    transform:         rotate(-45deg);
   }
-h3 a{
-    color: #7f8a1f;
-    text-decoration: none;
-}
+  
+  .header1 span::after {
+    right: -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    transform:         rotate(45deg);
+  }

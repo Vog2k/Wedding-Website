@@ -398,7 +398,7 @@ h3{
     display: block;
     z-index: 1;
     border-radius: 9px;
-    box-shadow: 2px 1px 3px 1px rgb(0, 0, 0);
+    box-shadow: 2px rgb(0, 0, 0);
     padding: -20px;
     
 }
@@ -449,7 +449,7 @@ h3{
     border-radius: 10px;
     text-align: left;
     background: #fff3f3;
-    padding: 45px;
+    padding: 45px 20px;
     cursor: pointer;
     display: flex;
 }
@@ -498,11 +498,15 @@ h3{
          font-size: 24px;
     }     
 }
+.line{
+    width: 2px;
+
+}
 .icons .fa{
     color: #f44336;
     margin: 0 13px;
     cursor: pointer;
-    padding: 18px 0;
+    padding: 25px 2px;
 }
 .fa-heart-o{
     color: #f44336;
@@ -630,45 +634,39 @@ h3{
 
 .checklist{
     width: 75%;
-    margin-bottom: 100px;
+    height: 100%;
     text-align: center;
-    padding: 120px;
     box-sizing: border-box;
     border-radius: 10px;
     background: #fff3f3;
-    margin-right: 50%;
-    margin-left: 12.5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: relative;
+    padding: 50px;
 
-}
-.mid h1{
-
-    padding-bottom: -300px;
-    text-align: center;
-    font-size: 40px;
-    text-decoration: none;
-    color: #000000;
-    bottom: -100px;
-    
 
 }
 .checklist img{
-    width: 50%;
-    height: 40%;
-    display: block;
-    z-index: 1;
-    display: inline;
     float: left;
-    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    display: center;
+    z-index: 1;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+
 }
 .checklist h4{
     font-size: 25px;
-    vertical-align:middle;
+    padding: 20px;
+    position: relative;
 }
 .checklist h3{
-    width: 100px;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     display: inline;
+    position: relative;
 
 }
 .buttonz1{
@@ -719,14 +717,29 @@ h3{
     min-height: auto;
     background-color:  #fff3f3;
     text-align: center;
-    padding: 90px 0;
+    padding: 50px 20px;
     box-sizing: border-box;
+
     
     
 }
+
+.p1{
+    font-weight: 600;
+    font-size: 18px;
+    top: -20px;
+    position: relative;
+    
+}
+.oop{
+    width: 80%;
+    display: contents;
+    position: absolute;
+    
+}
 .footer h5{
-    margin-bottom: 25px;
-    margin-top: 20px;
+    top: -20px;
+    position: relative;
     font-weight: 600;
     font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -735,7 +748,6 @@ h3{
     text-align: left;
     font-size: 15px;
     -webkit-box-direction: normal;
-    box-sizing: content-box;
     font-style: normal;
     word-spacing: normal;
     padding: 2px;
@@ -744,28 +756,30 @@ h3{
 }
 .credits{
     display: flex; 
-    height: 130px;
+    height: 140px;
     width: 80%;
+    
 
 }
 .Leftbox{
     float: right;
     height: 70px;
     width: 23%;
-    padding: 0 10px;
+    
+    
 
 }
 .rightbox{
     float: right;
     height: 70px;
     width: 23%;
-    padding: 0 10px;
+    
 
 }
 .middlebox{
     height: 70px;
     width: 23%;
-    padding: 0 10px;
+    padding-left: 50px;
 }
 .middlebox1{
     height: 70px;

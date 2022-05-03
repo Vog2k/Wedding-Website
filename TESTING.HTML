@@ -3,530 +3,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Home W&E</title>
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="TESTING.CSS">
     <link rel="icon" type="image/x-icon" href="images/pngwing.com.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<head>
-<body onload="slider()">
-    <div class="banner">
-        <div class="slider">
-             <img src="images/Lukes.jpg" id="slideImg">
-      </div>
-        <div class="overlay">
-            <div class="navbarz">
-                <div class="logo">
-                    <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
-                    <a href="Home.html">
-                    <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
-                    </a>
-
-                </div>
-
-                <section class="header">
-                    <nav>
-                        <div class="nav-links" id="navLinks">
-                                    <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
-                                <ul>
-                                    <!--<li><a href="">HOME</a></li>-->
-                                   
-                                    <li><a href="Venues.html">VENUES</a></li>
-                                    <li><a href="Gallery.html">GALLERY</a></li>
-                                    <li><a href="Calender.html">CALENDER</a></li>
-                                    <li><a href="Contact Us.html">CONTACT US</a></li>
-                                    <li><a href="About Us.html">ABOUT US</a></li>
-                                    <li><a href="EXPLORE.html">EXPLORE</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </nav>
-                        <!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar -->
-            </section>
-    <!--BELOW BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
-            </div>
-
-                <div class="content">
-                    <div style="position: relative;bottom: -160px;">
-                        <div class="wrapper-text">
-                            
-                            <h1>AND SO THE ADVENTURE BEGINS</h1>
-                        </div>
-                    <!--<h3>Plan your future now </h3>-->
-                </div>
-
-                    
-                        <div style="position: relative;bottom: -160px;">
-                        <button type="button"><a href="EXPLORE.html" style="text-decoration: none; color: white;" class="button">Explore</a></button>
-                 
-                        <button type="button"><a href="REVIEWS.html" style="text-decoration: none; color: white;" class="button">Reviews</a></button>
-                        </div>
-                    </div>
-
-            </div>      
-        </div>
+<!-- First section -->
+<header>
+    <h1 class="animated bounceInDown">Animate.css</h1>
+    <h2 class="animated bounceInDown">Level Up Your Websites with Animate.css</h2>
+    <span class="animated bounce"></span>
+  </header>
+  
+  <!-- Scroll animations section -->
+  <h2 class="new-section">Scroll Animations</h2>
+  <div class="scroll-animations">
+    <div class="animated">
+      <span>&#9742;</span>
+      <h3>Number One</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lacinia est. Nulla malesuada massa orci, vitae placerat lorem pharetra a.</p>
     </div>
-<!--ABOVE BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
-
-
-    <!--BELOW Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->
-    <script>
-        var slideImg = document.getElementById("slideImg");
-
-        var images = new Array(
-            "images/lukes.jpg",
-            "images/riverhead.jpg",
-            "images/ohariu-farm-wedding-3.jpg",
-            "images/IMG_5550.jpg",
-            "images/Seating.jpg",
-            "images/image12.jpg",
-            "images/Kamana.jpg"
-            );
-
-        var len = images.length;
-        var i = 0;
-        
-        function slider(){
-            if(i > len-1){
-                i = 0;
-            }
-            slideImg.src = images[i];
-            i++;
-            setTimeout('slider()',4000);
-        }
-
-    </script>
-            <!--ABOVE Slide Show Images --><!--Slide Show Images --><!--Slide Show Images -->
-
-
-</head>
-<main>
-
-<div id="navbar">
-    <div style="z-index: -1">
-        <a href="Home.html" id="about">Home</a>
-        <a href="Venues.html" id="blog">Venues</a>
-        <a href="Calender.html" id="projects">Calender</a>
-        <a href="About Us.html" id="contact">About Us</a>
-        <a href="EXPLORE.html" id="contact">Explore</a>
-      </div>
-</div>
+    <div class="animated">
+      <span>&#9835;</span>
+      <h3>Number Two</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lacinia est. Nulla malesuada massa orci, vitae placerat lorem pharetra a.</p>
+    </div>
+    <div class="animated">
+      <span>&#9730;</span>
+      <h3>Number Three</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lacinia est. Nulla malesuada massa orci, vitae placerat lorem pharetra a.</p>
+    </div>
+  </div>
+  
+  <!-- Click animations section -->
+  <div class="click-animations">
+    <h2 class="new-section">Click Animations</h2>
+    <form>
+      <input type="text" placeholder="Name" id="name" />
+      <input type="text" placeholder="Email" id="email" />
+      <textarea rows="7" placeholder="Message" id="message"></textarea>
+    </form>
+    <button>Send</button>
+  </div>
 
 <script>
-    // When the user scrolls down 20px from the top of the document, slide down the navbar
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 140) {
-        document.getElementById("navbar").style.top = "0px";
-      } else {
-        document.getElementById("navbar").style.top = "-60px";
+    $(document).ready(function() {
+  // Check if element is scrolled into view
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+  }
+  // If element is scrolled into view, fade it in
+  $(window).scroll(function() {
+    $(".scroll-animations .animated").each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass("fadeInLeft");
       }
+    });
+  });
+
+  // Click Animations
+  $("button").on("click", function() {
+    /*
+    If any input is empty make it's border red and shake it. After the animation is complete, remove the shake and animated classes so that the animation can repeat.
+    */
+
+    // Check name input
+    if ($("#name").val() === "") {
+      $("#name")
+        .addClass("form-error animated shake")
+        .one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function() {
+            $(this).removeClass("animated shake");
+          }
+        );
+    } else {
+      $("#name").removeClass("form-error");
     }
-    </script>
 
-        <!-----JavaAcript for Toggle Menu------>
-        <script>
-    
-            var navLinks = document.getElementById("navLinks");
-            function showMenu() {
-                navLinks.style.right = "0";
-            }
-            function hideMenu() {
-                navLinks.style.right = "-200px";
-            }    
-        
-        </script>
+    // Check email input
+    if ($("#email").val() === "") {
+      $("#email")
+        .addClass("form-error animated shake")
+        .one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function() {
+            $(this).removeClass("animated shake");
+          }
+        );
+    } else {
+      $("#email").removeClass("form-error");
+    }
 
-<!--Locations class -->
-<section class="Locations">
-        <h1>Locations</h1>
-        <p>Check out the beautiful views here!</p>
-    
-        <div class="row">
-            <a href="Venues.html"style="text-decoration: none;">
-            <div class="locations-col">
-                <h3>North Island</h3>
-                <div class="wrapper-text1">
-                
-                <p>Northland <br>
-                    Auckland <br>
-                    Waikato <br>
-                    Bay of Plenty <br>
-                    Gisborne <br>
-                    Taranaki <br>
-                    Manawatū-Whanganui <br>
-                    Hawke's Bay Region <br>
-                    Wellington Region</p>
-
-                </div>
-            </a>
-            </div>
-            <a href="Venues.html"style="text-decoration: none;">
-            <div class="locations-col">
-                    <h3>South Island</h3>
-                    <div class="wrapper-text1">
-                    <p>Tasman <br>
-                    Marlborough <br>
-                    Nelson <br> 
-                    West Coast <br>
-                    Canterbury <br>
-                    Otago <br>
-                    Southland</p>
-                </div>
-            </a>
-            </div>
-            <a href="Venues.html"style="text-decoration: none;">
-            <div class="locations-col">
-                <h3>Outer Islands</h3>
-                <div class="wrapper-text1">
-                <p>Stewart Island <br>
-                    Waiheke Island <br>
-                    Matakana Island <br>
-                    Rangitoto Island <br>
-                    Kapiti Island <br>
-                    Kawau Island <br>
-                    Great Barrier Island link <br> 
-                    Tiritiri Matangi Island</p>
-                </div>
-            </a>
-            </div>
-    
-        </div>
-
-</section>
-    
-
-<section class="services">
-        
-        <h1>Our Services</h1>
-        <div class="wrapper-text1">
-        <h3>From a two person’s romantic elopement to a big wedding celebrated with hundreds
-            From one wedding dress hire to a full wedding package.
-            aMoment wedding is your one-stop, all-inclusive wedding planning company in Queenstown.
-            (Auckland wedding planning service will be online soon)</h3>
-        </div>
-        <div class="row">
-            <div class="services-col">
-                <img src="images/BO.jpg">
-                <div class="layer">
-                    <h3>Decorations</h3>
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="services-col">
-                <img src="images/E3ADD72F-26B3-453E-A912-DD2E68564753-700x467.jpeg">
-                <div class="layer">
-                    <h3>Proposal Planning</h3>
-                </div>
-            </div>
-            <div class="services-col">
-                <img src="images/car.jpg">
-                <div class="layer">
-                    <h3>Wedding Concierge</h3>
-                </div>
-            </div>
-        </div> 
-        <section>
-            <div class="services-col">
-                <img src="images/Kate+Roberge+Photography-154.jpg">
-                <div class="layer">
-                    <h3>Pre/Post Photography</h3>
-                </div>
-        </section>
-        <h1></h1>
-        <div class="wrapper-text1">
-        </div>
-        <div class="row">
-            <div class="services-col">
-                <img src="images/ready.png">
-                <div class="layer">
-                    <h3>Hair and Make up</h3>
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="services-col">
-                <img src="images/vows1-514774.jpg">
-                <div class="layer">
-                    <h3>Renewal of vows</h3>
-                </div>
-            </div>
-            <div class="services-col">
-                <img src="images/83168622_2243176335987081_1458795739554512896_n.jpg">
-                <div class="layer">
-                    <h3>Wedding Dress Hire</h3>
-                </div>
-            </div>
-        </div>         
-
-  <!-------dont know yet-------->
-    
-<section class="notSure">
-        <h1>Still Not Sure</h1>
-        <p></p>
-    
-        <div class="rows">
-            <div class="notSure-col">
-                
-                <img class="mySlides" src="images/Carrington.jpg">
-                <img class="mySlides" src="images/fan.jpg">
-                <img class="mySlides" src="images/View.jpg">
-                <img class="mySlides" src="images/Stuff.jpg">
-
-                <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
-                
-                <p>Experience a wedding venue like no other and make your special day an event to remember as you celebrate surrounded by the beauty
-                and stunning scenery of the heart of Northland.
-                Exchange your vows surrounded by the vines in our lovely vineyard, look out over sweeping views of the Pacific Ocean, and commemorate your day with photos taken against
-                the backdrop of golden sands and deep blue sea. Indulge in casual dining with your guests in our winery’s barrel room and enjoy the Estate’s accommodation without having to leave your wedding venue. 
-                Carrington Estate, situated on the beautiful Karikari Peninsula, 
-                will make your wedding day a beautiful memory
-                to cherish forever.
-            
-                <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-                
-                function plusDivs(n) {
-                  showDivs(slideIndex += n);
-                }
-                
-                function showDivs(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length} ;
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                  }
-                  x[slideIndex-1].style.display = "block";
-                }
-              </script>
-              </div>
-
-        
-            <div class="notSure-col">
-
-              <img class="mySlides1" src="images/Close up 1.jpg">
-              <img class="mySlides1" src="images/Flowers.jpg">
-              <img class="mySlides1" src="images/wa.jpg">
-              <img class="mySlides1" src="images/Reception.jpeg">
-
-              <button class="button display-left" onclick="plusDivs1(-1)">&#10094;</button>
-              <button class="button display-right" onclick="plusDivs1(+1)">&#10095;</button>
-
-                <h3><a href="https://www.treechurch.co.nz/"style="text-decoration: none;"></a>Hamilton Ohaupo</a></h3>
-                <p>Ask a local Hamiltonian the number one thing you shouldn't miss in their city,
-                    and there's a high chance they'll say the
-                    Hamilton Gardens.While traditional botanical gardens focus on 
-                    types of plants and are organized accordingly,
-                    the Hamilton Gardens are laid out according to different kinds of garden design.
-                    The effect is a showcase of the cultural meaning of gardens over the centuries.
-                
-                    <script>
-                      var slideIndex = 1;
-                      showDivs(slideIndex);
-                      
-                      function plusDivs1(n) {
-                        showDivs(slideIndex += n);
-                      }
-                      
-                      function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides1");
-                        if (n > x.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = x.length} ;
-                        for (i = 0; i < x.length; i++) {
-                          x[i].style.display = "none";
-                        }
-                        x[slideIndex-1].style.display = "block";
-                      }
-                    </script>
-    
-            </div>
-            <div class="notSure-col">
-
-              <img class="mySlides2" src="images/Close up 1.jpg">
-              <img class="mySlides2" src="images/Flowers.jpg">
-              <img class="mySlides2" src="images/wa.jpg">
-              <img class="mySlides2" src="images/Reception.jpeg">
-
-              <button class="button display-left" onclick="plusDivs1(-1)">&#10094;</button>
-              <button class="button display-right" onclick="plusDivs1(+1)">&#10095;</button>
-
-                <h3><a href="https://www.oretivillage.com/"style="text-decoration: none;"></a>Taupo Oreti</a></h3>
-                
-                <p>Taupo, a town near the centre of New Zealand's North Island, is distinguished
-                by its lakefront setting and outdoor sports ranging
-                from fishing to jet-boating. The vast waters of Lake Taupo, a volcanic caldera,
-                drain into the Huka Falls, dramatic, crystal-blue cascades reachable by hikingh
-                and biking trails. Surrounding Taupo are hot springs like those filling the
-                 Craters of the Moon reserve.
-    
-                 <script>
-                  var slideIndex = 1;
-                  showDivs(slideIndex);
-                  
-                  function plusDivs1(n) {
-                    showDivs(slideIndex += n);
-                  }
-                  
-                  function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides2");
-                    if (n > x.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = x.length} ;
-                    for (i = 0; i < x.length; i++) {
-                      x[i].style.display = "none";
-                    }
-                    x[slideIndex-1].style.display = "block";
-                  }
-                </script>
-
-            </div>
-    
-        </div>
-</section>
-    
-    <!---My Review needs some work -->
-<hr>
-
-
-<section class="checklist">
-    
-    <img src="images/ready.png">
-        <div class="checklist1">
-            <h4>Ch-ch-check it off!</h4>
-            <h3>Not sure where to start? No worries, we have your back. We will get you started with a checklist
-            personalised to your wedding so you don’t miss a thing.</h3>
-            
-        </div>
-        <button class="buttonz">Check List</button>     
-</section>
-
-<section class="review">
-    <hr>
-    <h1>What our clients have to say.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <div class="row">
-        <div class="review-col">
-            <img src="images/jan.jpg">
-            <div>
-            <p>Love it, cannot fault it at all, sent out date changes recently and reset all the invites so guests have to reply again for new date.</p>
-                <h3>Jason Lakin</h3>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-                
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/stella.jpg">
-            <div>
-                <p>I’m enjoying it so far. I think it’s really reasonable for the top package and when I’ve been stuck you get assistance from the tech team. So far no complaints! .</p>
-                <h3>Stella Leta </h3>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-        </div>
-
-</section> 
-
-
-    
-</main>  
-</header>       
-<footer>
-
-    <!-- Call To Action---->
-    <section class="cta">
-        <h1>Give us a call or message! We are happy to help! </h1>
-        <a href="Contact Us.html"style="text-decoration: none;" class="buttonz">CONTACT US</a>
-    </section>
-
-
-    
-    <!-- Footer---->
-    
-    <section class="footer">
-        <h5>About Me</h5>
-        <p>This is simply just a project i wanted to complete.Any photos or videos i have used are not owned by me and but simply can be found this is moreless a website to assist in the planning of a wedding.
-        This website is also free and used as a project for my portfolio. So thank you for visting and please share to friends and family.</p>
-    
-            <div class="icons">
-                <a href="https://www.facebook.com/TeejLeatau/">
-                <i class="fa fa-facebook"></i></a>
-            
-                <a href="https://twitter.com/VogRunCmd">
-                <i class="fa fa-twitter"></i></a>
-            
-                <a href="https://www.instagram.com/_tleatau/">
-                <i class="fa fa-instagram"></i></a>
-            
-                <a href="https://www.linkedin.com/in/timothyleatau//">
-                <i class="fa fa-linkedin"></i></a>
-            
-            </div>
-
-<section class="credits">
-    <div class="leftbox">
-            <h4><a href="Main.html" style="text-decoration: none;color: #000000;"><h4>Decorations</h4></a>
-            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Proposal planning</h4></a>
-            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Wedding Concierge</h4></a>
-            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Pre/Post Photography</h4></a>
-            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Hair and Make up</h4></a>
-        </div>
-        <div class="middlebox">
-            <a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Renewal of vows<h4></a>
-            <a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Wedding Dress Hire</h4></a>
-            <h4>Explore</h4>
-            <h4>Reviews</h4>
-            <h4>Checklist</h4>
-
-        </div>
-        <div class="middlebox1">
-            <h4>Northland</h4>
-            <h4>Southland</h4>
-            <h4>Outter Islands</h4>
-
-        </div>
-        <div class="rightbox">
-            <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>VENUES</h4></a>
-            <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>GALLERY</h4></a>
-            <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>CALENDER</h4></a>
-            <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>ABOUT US</h4></a>
-            <a href="EXPLORE.html"style="text-decoration: none;color: #000000;"><h4>EXPLORE<h4></a>
-            <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>CONTACT US</h4></a>
-        </div>
-
-        <div class="BOTTEM">
-
-            <div class="logo1">
-                <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
-                <a href="Home.html">
-                <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
-                </a>
-
-            <p>Kiwi designed website </p>
-
-            <p>© 2022 Weddings & Events Ltd.</p>
-
-
-        </div>
-        
-    </section>
-
-
-</footer>  
+    // Check message textarea
+    if ($("#message").val() === "") {
+      $("#message")
+        .addClass("form-error animated shake")
+        .one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function() {
+            $(this).removeClass("animated shake");
+          }
+        );
+    } else {
+      $("#message").removeClass("form-error");
+    }
+  });
+});
+</script>
 </Body>  
 </Html>  
 
