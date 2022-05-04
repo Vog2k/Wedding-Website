@@ -1,11 +1,13 @@
-<html>
-<head>
-    <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Home W&E</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="icon" type="image/x-icon" href="images/pngwing.com.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -13,24 +15,25 @@
 <body onload="slider()">
     <div class="banner">
         <div class="slider">
-             <img src="images/kamana.jpg" id="slideImg">
+             <img src="images/Lukes.jpg" id="slideImg">
       </div>
         <div class="overlay">
             <div class="navbarz">
                 <div class="logo">
-                    <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
+                    
                     <a href="Home.html">
-                    <img src="images/pngwing.com.png">
+                    <img src="images/pngwing.com.png"class="responsive" style="max-width:100%;height:auto;">
                     </a>
-                        
+
                 </div>
 
                 <section class="header">
                     <nav>
                         <div class="nav-links" id="navLinks">
-                                    <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
+                                    
                                 <ul>
-                                    <!--<li><a href="">HOME</a></li>-->
+                                    
+                                   
                                     <li><a href="Venues.html">VENUES</a></li>
                                     <li><a href="Gallery.html">GALLERY</a></li>
                                     <li><a href="Calender.html">CALENDER</a></li>
@@ -40,38 +43,60 @@
                                     
                                 </ul>
                             </div>
+                            <form role="search" id="form">
+                            <input type="search" id="query" name="q" placeholder="Search here ..."aria-label="Search through site content"><button class="fa1">
+                                <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                              </button>
+                            </form> 
+                            <script>
+                                const f = document.getElementById('form');
+                                const q = document.getElementById('query');
+                                const google = 'http://127.0.0.1:5500/Wedding-Website/Home.html?';
+                                const site = 'http://127.0.0.1:5500/Wedding-Website/Home.html?';
+                          
+                                function submitted(event) {
+                                  event.preventDefault();
+                                  const url = google + site + '+' + q.value;
+                                  const win = window.open(url, '_blank');
+                                  win.focus();
+                                }
+                          
+                                f.addEventListener('submit', submitted);
+                              </script>
+                            
                         </nav>
-                        <!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar -->
             </section>
-    <!--BELOW BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
             </div>
 
                 <div class="content">
-                    <h1>AND SO THE ADVENTURE BEGINS</h1>
-                    <h3>Plan your future now </h3>
-                
+                    <div style="position: relative;bottom: -160px;">
+                        <div class="wrapper-text">
+                            
+                            <h1>AND SO THE ADVENTURE BEGINS</h1>
+                        </div>
+                </div>
 
-                    <div>
-
+                    
+                        <div style="position: relative;bottom: -160px;">
                         <button type="button"><a href="EXPLORE.html" style="text-decoration: none; color: white;" class="button">Explore</a></button>
                  
                         <button type="button"><a href="REVIEWS.html" style="text-decoration: none; color: white;" class="button">Reviews</a></button>
+                        </div>
                     </div>
 
             </div>      
         </div>
     </div>
-<!--ABOVE BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text--><!--BANNER Text-->
 
 
-    <!--BELOW Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->    <!--Slide Show Images -->
     <script>
         var slideImg = document.getElementById("slideImg");
 
         var images = new Array(
-            "images/mm.jpg",
-            "images/wa.jpg", //Change Img
-            "images/winehouse.jpg", //Change img
+            "images/lukes.jpg",
+            "images/riverhead.jpg",
+            "images/ohariu-farm-wedding-3.jpg",
+            "images/IMG_5550.jpg",
             "images/Seating.jpg",
             "images/image12.jpg",
             "images/Kamana.jpg"
@@ -90,20 +115,57 @@
         }
 
     </script>
-            <!--ABOVE Slide Show Images --><!--Slide Show Images --><!--Slide Show Images -->
 
 
 </head>
 <main>
 
+<div id="navbar">
+    <div style="z-index: -1">
+        <a href="Home.html" id="#Home">Home</a>
+        <a href="Venues.html" id="#Venues">Venues</a>
+        <a href="Calender.html" id="#Calender">Calender</a>
+        <a href="About Us.html" id="#About Us">About Us</a>
+      </div>
+</div>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 140) {
+        document.getElementById("navbar").style.top = "0px";
+      } else {
+        document.getElementById("navbar").style.top = "-80px";
+      }
+    }
+    </script>
+
+        <!-----JavaAcript for Toggle Menu------>
+        <script>
+    
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }    
+        
+        </script>
+
 <!--Locations class -->
-    <section class="Locations">
+<section class="Locations">
         <h1>Locations</h1>
         <p>Check out the beautiful views here!</p>
     
         <div class="row">
+            <a href="Venues.html"style="text-decoration: none;">
             <div class="locations-col">
                 <h3>North Island</h3>
+                <div class="wrapper-text1">
+                
                 <p>Northland <br>
                     Auckland <br>
                     Waikato <br>
@@ -113,9 +175,14 @@
                     Manawatū-Whanganui <br>
                     Hawke's Bay Region <br>
                     Wellington Region</p>
+
+                </div>
+            </a>
             </div>
+            <a href="Venues.html"style="text-decoration: none;">
             <div class="locations-col">
                     <h3>South Island</h3>
+                    <div class="wrapper-text1">
                     <p>Tasman <br>
                     Marlborough <br>
                     Nelson <br> 
@@ -123,9 +190,13 @@
                     Canterbury <br>
                     Otago <br>
                     Southland</p>
+                </div>
+            </a>
             </div>
+            <a href="Venues.html"style="text-decoration: none;">
             <div class="locations-col">
                 <h3>Outer Islands</h3>
+                <div class="wrapper-text1">
                 <p>Stewart Island <br>
                     Waiheke Island <br>
                     Matakana Island <br>
@@ -134,35 +205,33 @@
                     Kawau Island <br>
                     Great Barrier Island link <br> 
                     Tiritiri Matangi Island</p>
-        </div>
+                </div>
+            </a>
+            </div>
     
         </div>
-        
-    
-    
-    
-    </section>
-    
-    <!--Wanaka-->
-    
-    <section class="services">
-        <h1>Our Services
-            </h1>
-        <h3>From a two person’s romantic elopement to a big wedding celebrated with hundreds.
 
-            From one wedding dress hire to a full wedding package.
-            
-            aMoment wedding is your one-stop, all-inclusive wedding planning company in Queenstown.
-            
-            (Auckland wedding planning service will be online soon)</h3>
+</section>
     
+
+<section class="services">
+        
+        <h1>Our Services</h1>
+        <div class="wrapper-text1">
+        <h3>What services do we offer ? From the cake testing to the just married signs on the back of an 
+        american classic chevrolet, We've celebrated with thousands over the years suggesting the best venues and more.
+        Weddings & Events is an all-inclusive wedding planning company based out of a small room in Massey West Auckland.
+        we are here to help and make things easier and stree free for our future wedded couple.</h3>
+        </div>
         <div class="row">
+            <a href="Main.html">
             <div class="services-col">
                 <img src="images/BO.jpg">
                 <div class="layer">
                     <h3>Decorations</h3>
-                    <a href=""></a>
+
                 </div>
+                </a>
             </div>
             <div class="services-col">
                 <img src="images/E3ADD72F-26B3-453E-A912-DD2E68564753-700x467.jpeg">
@@ -177,170 +246,335 @@
                 </div>
             </div>
         </div> 
-
-            <!--<div class="services-col">
-                <img src="images/make up.jpg">
-                <div class="layer">
-                    <h3>Hair & Make up </h3>
-                </div>
-            </div> -->
         <section>
             <div class="services-col">
-                <img src="images/Kate+Roberge+Photography-154.jpg">
+                <img src="images/Kate+Roberge+Photography-154.jpg"class="responsive">
                 <div class="layer">
                     <h3>Pre/Post Photography</h3>
                 </div>
-        </section>       
-        
-    </section>
-    
-    <!--Wanaka-->
-    
-    <section class="services">    
+        </section>
+        <h1></h1>
+        <div class="wrapper-text1">
+        </div>
         <div class="row">
             <div class="services-col">
-                <img src="images/make up.jpg">
+                <img src="images/ready.png">
                 <div class="layer">
                     <h3>Hair and Make up</h3>
+                    <a href=""></a>
                 </div>
             </div>
             <div class="services-col">
-                <img src="images/fan.jpg">
+                <img src="images/vows1-514774.jpg">
                 <div class="layer">
                     <h3>Renewal of vows</h3>
                 </div>
             </div>
             <div class="services-col">
-                <img src="images/prep.jpg">
+                <img src="images/83168622_2243176335987081_1458795739554512896_n.jpg">
                 <div class="layer">
                     <h3>Wedding Dress Hire</h3>
                 </div>
             </div>
-        </div>       
-    </section>            
-    
-    <!-------dont know yet-------->
-    
-    <section class="notSure">
+        </div>         
+
+  <!-------dont know yet-------->
+</section>   
+<section class="notSure">
         <h1>Still Not Sure</h1>
-        <p>Most photos are taking from my Samsung phone and may differ in quality</p>
+        <p></p>
     
-        <div class="row">
+        <div class="rows">
             <div class="notSure-col">
-                <img src="images/front grange.jpeg">
-                <h3>Auckland</h3>
-                <p>Auckland, based around 2 large harbours, is a major city in the north of New Zealand’s <br>
-                North Island. In the centre, the iconic Sky Tower has views of Viaduct Harbour, <br>
-                which is full of superyachts and lined with bars and cafes. Auckland Domain, the city’s oldest park, <br>
-                is based around an extinct volcano and home to the formal Wintergardens. Near Downtown, Mission Bay Beach <br>
-                has a seaside promenade.</p>
+
+                <a href="https://www.carrington.co.nz/events/weddings/"style="cursor: pointer;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    text-decoration: none;
+                    color: black; font-size: 50px;">Carrington Estate</a>
+
+                <img class="mySlides" src="images/Carrington2.jpg"class="responsive">
+                <img class="mySlides" src="images/Carrington1.jpg"class="responsive">
+                <img class="mySlides" src="images/Carrington.jpg"class="responsive">
+                <img class="mySlides" src="images/Carrington3.jpg"class="responsive">
+                <img class="mySlides" src="images/Carrington4.jpg"class="responsive">
+                <img class="mySlides" src="images/c.jpg"class="responsive">
+
+                <button class="button1 display-left" class="button1" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button1 display-right"class="button1" onclick="plusDivs(+1)">&#10095;</button>
+                
+                <h3>Karikari Peninsula, Northisland</h3>
+
+                <p>Experience a wedding venue like no other and make your special day an event to remember as you celebrate surrounded by the beauty
+                and stunning scenery of the heart of Northland.
+                Exchange your vows surrounded by the vines in our lovely vineyard, look out over sweeping views of the Pacific Ocean, and commemorate your day with photos taken against
+                the backdrop of golden sands and deep blue sea. Indulge in casual dining with your guests in our winery’s barrel room and enjoy the Estate’s accommodation without having to leave your wedding venue. 
+                Carrington Estate, situated on the beautiful Karikari Peninsula, 
+                will make your wedding day a beautiful memory
+                to cherish forever.
+            
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length} ;
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  x[slideIndex-1].style.display = "block";
+                }
+              </script>
+              </div>
+
+        
+            <div class="notSure-col">
+
+                <a href="https://www.treechurch.co.nz/"style="cursor: pointer;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-decoration: none;
+                color: black; font-size: 50px;">Tree church</a>
+
+              <img class="mySlides1" src="images/TREE.jpeg"class="responsive">
+              <img class="mySlides1" src="images/tree inside.jpg"class="responsive">
+              <img class="mySlides1" src="images/Tree outside.jpg"class="responsive">
+              <img class="mySlides1" src="images/tree roses.jpeg"class="responsive">
+              <img class="mySlides1" src="images/tree flowers.jpeg"class="responsive">
+              <img class="mySlides1" src="images/tree1.jpg"class="responsive">
+              <img class="mySlides1" src="images/tree2.jpg"class="responsive">
+
+              <button class="button1 display-left1"class="button1"  onclick="plusDivs1(-1)">&#10094;</button>
+              <button class="button1 display-right1"class="button1"  onclick="plusDivs1(+1)">&#10095;</button>
+
+                <h3>Ohaupo Hamilton</h3>
+
+                <p>Ask a local Hamiltonian the number one thing you shouldn't miss in their city,
+                    and there's a high chance they'll say the
+                    Hamilton Gardens.While traditional botanical gardens focus on 
+                    types of plants and are organized accordingly,
+                    the Hamilton Gardens are laid out according to different kinds of garden design.
+                    The effect is a showcase of the cultural meaning of gardens over the centuries.
+                
+                    <script>
+                      var slideIndex = 1;
+                      showDivs1(slideIndex);
+                      
+                      function plusDivs1(n) {
+                        showDivs1(slideIndex += n);
+                      }
+                      
+                      function showDivs1(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides1");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";
+                        }
+                        x[slideIndex-1].style.display = "block";
+                      }
+                    </script>
     
             </div>
             <div class="notSure-col">
-                <img src="images/TREE.jpeg">
-                <h3>Hamilton</h3>
-                <p>Ask a local Hamiltonian the number one thing you shouldn't miss in their city,<br>
-                    and there's a high chance they'll say the Hamilton Gardens. While traditional <br>
-                    botanical gardens focus on types of plants and are organized accordingly,<br>
-                    the Hamilton Gardens are laid out according to different kinds of garden design. <br>
-                    The effect is a showcase of the cultural meaning of gardens over the centuries.</p>
-    
-            </div>
-            <div class="notSure-col">
-                <img src="images/T.jpg">
-                <h3>Taupo</h3>
-                <p>Taupo, a town near the centre of New Zealand's North Island, <br>
-                is distinguished by its lakefront setting and outdoor sports ranging <br>
-                from fishing to jet-boating. The vast waters of Lake Taupo, a volcanic caldera, <br>
-                drain into the Huka Falls, dramatic, crystal-blue cascades reachable by hiking <br>
-                and biking trails. Surrounding Taupo are hot springs like those filling the Craters of the Moon reserve.</p>
+
+                <a href="https://www.oretivillage.com/"style="cursor: pointer;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-decoration: none;
+                color: black; font-size: 50px;">Oretivillage</a>
+
+            <img class="mySlides2" src="images/taupo-wedding-photographers-1-2.jpg"class="responsive">
+            <img class="mySlides2" src="images/Oreti3.jpg"class="responsive">
+            <img class="mySlides2" src="images/Oreti7.jpg"class="responsive">
+            <img class="mySlides2" src="images/Oreti-Village-07.jpg"class="responsive">
+            <img class="mySlides2" src="images/Oreti10.jpg"class="responsive">
+            <img class="mySlides2" src="images/Oreti9.jpg"class="responsive">
+
+              <button class="button1 display-left2"class="button1"  onclick="plusDivs2(-1)">&#10094;</button>
+              <button class="button1 display-right2"class="button1"  onclick="plusDivs2(+1)">&#10095;</button>
+
+               <h3>Mission House Drive, Pukawa, Lake Taupo</h3>
+                
+                <p>Taupo, a town near the centre of New Zealand's North Island, is distinguished
+                by its lakefront setting and outdoor sports ranging
+                from fishing to jet-boating. The vast waters of Lake Taupo, a volcanic caldera,
+                drain into the Huka Falls, dramatic, crystal-blue cascades reachable by hikingh
+                and biking trails. Surrounding Taupo are hot springs like those filling the
+                 Craters of the Moon reserve.
+                 <hr>
+                 <script>
+                  var slideIndex = 1;
+                  showDivs2(slideIndex);
+                  
+                  function plusDivs2(n) {
+                    showDivs2(slideIndex += n);
+                  }
+                  
+                  function showDivs2(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides2");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+                  }
+                </script>
     
             </div>
     
         </div>
-    
-    </section>
+</section>
     
     <!---My Review needs some work -->
+
+<section class="checklist">
+
     
-    <section class="review">
-        <h1>What our clients have to say.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    
-        <div class="row">
-            <div class="review-col">
-                <img src="Babe.jpg">
-                <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Pellentesque aliquet turpis nulla, eleifend
-                    faucibus est sollicitudin ut. Maecenas ut venenatis ex,
-                    et dapibus purus.</p>
-                    <h3>Elysha Larking</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                    
-                </div>
+    <img src="images/ready.png"class="responsive">
+        <div class="checklist1">
+            <h4>Ch-ch-check it off!</h4>
+            
+            <h3>Not sure where to start? No worries, we have your back. We will get you started with a checklist personalised to your wedding so you don’t miss a thing.</h3>
+            
+        </div>
+        <button class="buttonz1">Check List</button>     
+</section>
+
+<section class="review">
+    <hr class="line"></hr>
+    <h1>What our clients have to say.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="review-col">
+            <img src="images/jan.jpg">
+            <div>
+            <p>Love it, cannot fault it at all, sent out date changes recently and reset all the invites so guests have to reply again for new date.</p>
+                <h3>Jason Lakin</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                
             </div>
-            <div class="review-col">
-                <img src="Me.jpg">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Pellentesque aliquet turpis nulla, eleifend
-                    faucibus est sollicitudin ut. Maecenas ut venenatis ex,
-                    et dapibus purus.</p>
-                    <h3>Timothy Leatau</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
+        </div>
+        <div class="review-col">
+            <img src="images/stella.jpg">
+            <div>
+                <p>I’m enjoying it so far. I think it’s really reasonable for the top package and when I’ve been stuck you get assistance from the tech team. So far no complaints! .</p>
+                <h3>Stella Leta </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
             </div>
+        </div>
+
+</section> 
+
+
     
-    </section>
-</main>    
+</main>  
+</header>       
+<footer>
+
     <!-- Call To Action---->
     <section class="cta">
-        <h1>Enroll For Our Various Online Courses <br> Anywhere From The
-        World</h1>
-        <a href="Contact Us.html" class="hero-btn">CONTACT US</a>
+        <h1>Give us a call or message! We are happy to help! </h1>
+        <a href="Contact Us.html"style="text-decoration: none;" class="buttonz">CONTACT US</a>
     </section>
+
+
     
     <!-- Footer---->
     
     <section class="footer">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Pellentesque aliquet turpis nulla, eleifend
-            faucibus est <br> sollicitudin ut. Maecenas ut venenatis ex,
-            et dapibus purus</p>
-    
+        <div class="oop">
+        <h5>About Me</h5>
+        
+        <p class="p1">This is simply just a project i wanted to complete.Any photos or videos i have used are not owned by me and but simply can be found this is moreless a website to assist in the planning of a wedding.
+        This website is also free and used as a project for my portfolio. So thank you for visting and please share to friends and family.</p>
+    </div> <hr>
+    <hr>
             <div class="icons">
-                <i class="fa fa-facebook"></i>
-    
-                <i class="fa fa-twitter"></i>
-    
-                <i class="fa fa-instagram"></i>
-    
-                <i class="fa fa-linkedin"></i>
+                
+                <a href="https://www.facebook.com/TeejLeatau/">
+                <i class="fa fa-facebook"></i></a>
+            
+                <a href="https://twitter.com/VogRunCmd">
+                <i class="fa fa-twitter"></i></a>
+                
+                <a href="https://www.instagram.com/_tleatau/">
+                <i class="fa fa-instagram"></i></a>
+            
+                <a href="https://www.linkedin.com/in/timothyleatau//">
+                <i class="fa fa-linkedin"></i></a>
+             
             </div>
-            <p>Made With <i class="fa fa-heart-o"></i> Timothy Leatau </p>
+           
+<section class="credits">
+    <div class="leftbox">
+            <h4><a href="Main.html" style="text-decoration: none;color: #000000;"><h4>Decorations</h4></a>
+            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Proposal planning</h4></a>
+            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Wedding Concierge</h4></a>
+            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Pre/Post Photography</h4></a>
+            <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Hair and Make up</h4></a>
+        </div>
+        <div class="middlebox">
+            <a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Renewal of vows<h4></a>
+            <a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Wedding Dress Hire</h4></a>
+            <a href="EXPLORE.html"style="text-decoration: none;color: #000000;"><h4>Explore</h4></a>
+            <a href="REVIEWS.html"style="text-decoration: none;color: #000000;"><h4>Reviews</h4></a>
+            <a href="Checklist.html"style="text-decoration: none;color: #000000;"><h4>Checklist</h4></a>
+
+        </div>
+        <div class="middlebox1">
+            <a href="locations.html"style="text-decoration: none;color: #000000;"><h4>North island</h4></a>
+            <a href="locations.html"style="text-decoration: none;color: #000000;"><h4>South island</h4></a>
+            <a href="locations.html"style="text-decoration: none;color: #000000;"><h4>Outer island</h4></a>
+
+        </div>
+        <div class="rightbox">
+            <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>VENUES</h4></a>
+            <a href="Gallery.css"style="text-decoration: none;color: #000000;"><h4>GALLERY</h4></a>
+            <a href="Calender.html"style="text-decoration: none;color: #000000;"><h4>CALENDER</h4></a>
+            <a href="About Us.html"style="text-decoration: none;color: #000000;"><h4>ABOUT US</h4></a>
+            <a href="EXPLORE.html"style="text-decoration: none;color: #000000;"><h4>EXPLORE<h4></a>
+            <a href="Contact Us.html"style="text-decoration: none;color: #000000;"><h4>CONTACT US</h4></a>
+        </div>
+
+        <div class="BOTTEM">
+
+            <div class="logo1">
+                <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
+                <a href="Home.html">
+                <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
+                </a>
+
+            <p>Kiwi designed website </p>
+
+            <p>© 2022 Weddings & Events Ltd.</p>
+
+
+        </div>
+        
     </section>
+
+
     
-    
-    <!-----JavaAcript for Toggle Menu------>
-    <script>
-    
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }    
-    
-    </script>
-}
+
+</footer>  
+</Body>  
+</Html>  
+
+

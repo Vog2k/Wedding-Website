@@ -44,6 +44,26 @@
                                     
                                 </ul>
                             </div>
+                            <form1 role="search" id="form1">
+                              <input1 type="search" id="query" name="q" placeholder="Search here ..."aria-label="Search through site content"><button class="fa1">
+                                  <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                                </button>
+                              </form1> 
+                              <script>
+                                  const f = document.getElementById('form1');
+                                  const q = document.getElementById('query');
+                                  const google = 'http://127.0.0.1:5500/Wedding-Website/Home.html?';
+                                  const site = 'http://127.0.0.1:5500/Wedding-Website/Home.html?';
+                            
+                                  function submitted(event) {
+                                    event.preventDefault();
+                                    const url = google + site + '+' + q.value;
+                                    const win = window.open(url, '_blank');
+                                    win.focus();
+                                  }
+                            
+                                  f.addEventListener('submit', submitted);
+                                </script>
                         </nav>
                         <!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar --><!--ABOVE NavBar -->
             </section>
@@ -149,23 +169,78 @@
             navLinks.style.right = "-200px";
         }    
     
-    </script>
-}    
-<section class="footer">
-    <h4>About Us</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Pellentesque aliquet turpis nulla, eleifend
-        faucibus est <br> sollicitudin ut. Maecenas ut venenatis ex,
-        et dapibus purus</p>
+    </script> 
+   <section class="footer">
+    <div class="oop">
 
+<hr>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
-
-            <i class="fa fa-twitter"></i>
-
-            <i class="fa fa-instagram"></i>
-
-            <i class="fa fa-linkedin"></i>
+            
+            <a href="https://www.facebook.com/TeejLeatau/">
+            <i class="fa fa-facebook"></i></a>
+        
+            <a href="https://twitter.com/VogRunCmd">
+            <i class="fa fa-twitter"></i></a>
+            
+            <a href="https://www.instagram.com/_tleatau/">
+            <i class="fa fa-instagram"></i></a>
+        
+            <a href="https://www.linkedin.com/in/timothyleatau//">
+            <i class="fa fa-linkedin"></i></a>
+         
         </div>
-        <p>Made With <i class="fa fa-heart-o"></i> Timothy Leatau </p>
+       
+<section class="credits">
+<div class="leftbox">
+        <h4><a href="Main.html" style="text-decoration: none;color: #000000;"><h4>Decorations</h4></a>
+        <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Proposal planning</h4></a>
+        <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Wedding Concierge</h4></a>
+        <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Pre/Post Photography</h4></a>
+        <h4><a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Hair and Make up</h4></a>
+    </div>
+    <div class="middlebox">
+        <a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Renewal of vows<h4></a>
+        <a href="Main.html"style="text-decoration: none;color: #000000;"><h4>Wedding Dress Hire</h4></a>
+        <a href="EXPLORE.html"style="text-decoration: none;color: #000000;"><h4>Explore</h4></a>
+        <a href="REVIEWS.html"style="text-decoration: none;color: #000000;"><h4>Reviews</h4></a>
+        <a href="Checklist.html"style="text-decoration: none;color: #000000;"><h4>Checklist</h4></a>
+
+    </div>
+    <div class="middlebox1">
+        <a href="locations.html"style="text-decoration: none;color: #000000;"><h4>North island</h4></a>
+        <a href="locations.html"style="text-decoration: none;color: #000000;"><h4>South island</h4></a>
+        <a href="locations.html"style="text-decoration: none;color: #000000;"><h4>Outer island</h4></a>
+
+    </div>
+    <div class="rightbox">
+        <a href="Venues.html"style="text-decoration: none;color: #000000;"><h4>VENUES</h4></a>
+        <a href="Gallery.css"style="text-decoration: none;color: #000000;"><h4>GALLERY</h4></a>
+        <a href="Calender.html"style="text-decoration: none;color: #000000;"><h4>CALENDER</h4></a>
+        <a href="About Us.html"style="text-decoration: none;color: #000000;"><h4>ABOUT US</h4></a>
+        <a href="EXPLORE.html"style="text-decoration: none;color: #000000;"><h4>EXPLORE<h4></a>
+        <a href="Contact Us.html"style="text-decoration: none;color: #000000;"><h4>CONTACT US</h4></a>
+    </div>
+
+    <div class="BOTTEM">
+
+        <div class="logo1">
+            <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
+            <a href="Home.html">
+            <img src="images/pngwing.com.png" style="max-width:100%;height:auto;">
+            </a>
+
+        <p>Kiwi designed website </p>
+
+        <p>© 2022 Weddings & Events Ltd.</p>
+
+
+    </div>
+    
 </section>
+
+
+
+
+</footer>  
+</Body>  
+</Html>  

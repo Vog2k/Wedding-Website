@@ -1,69 +1,15 @@
-$(document).ready(function() {
-   // Check if element is scrolled into view
-   function isScrolledIntoView(elem) {
-     var docViewTop = $(window).scrollTop();
-     var docViewBottom = docViewTop + $(window).height();
- 
-     var elemTop = $(elem).offset().top;
-     var elemBottom = elemTop + $(elem).height();
- 
-     return elemBottom <= docViewBottom && elemTop >= docViewTop;
-   }
-   // If element is scrolled into view, fade it in
-   $(window).scroll(function() {
-     $(".scroll-animations .animated").each(function() {
-       if (isScrolledIntoView(this) === true) {
-         $(this).addClass("fadeInLeft");
-       }
-     });
-   });
- 
-   // Click Animations
-   $("button").on("click", function() {
-     /*
-     If any input is empty make it's border red and shake it. After the animation is complete, remove the shake and animated classes so that the animation can repeat.
-     */
- 
-     // Check name input
-     if ($("#name").val() === "") {
-       $("#name")
-         .addClass("form-error animated shake")
-         .one(
-           "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-           function() {
-             $(this).removeClass("animated shake");
-           }
-         );
-     } else {
-       $("#name").removeClass("form-error");
-     }
- 
-     // Check email input
-     if ($("#email").val() === "") {
-       $("#email")
-         .addClass("form-error animated shake")
-         .one(
-           "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-           function() {
-             $(this).removeClass("animated shake");
-           }
-         );
-     } else {
-       $("#email").removeClass("form-error");
-     }
- 
-     // Check message textarea
-     if ($("#message").val() === "") {
-       $("#message")
-         .addClass("form-error animated shake")
-         .one(
-           "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-           function() {
-             $(this).removeClass("animated shake");
-           }
-         );
-     } else {
-       $("#message").removeClass("form-error");
-     }
-   });
- });
+gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'1200px', height:'100%', top:0, left:'50%', x:'-50%'})
+gsap.set('.scrollDist', {width:'100%', height:'200%'})
+gsap.timeline({scrollTrigger:{trigger:'.scrollDist', start:'top top', end:'bottom bottom', scrub:1}})
+    .fromTo('.sky', {y:0},{y:-200}, 0)
+    .fromTo('.cloud1', {y:100},{y:-800}, 0)
+    .fromTo('.cloud2', {y:-150},{y:-500}, 0)
+    .fromTo('.cloud3', {y:-50},{y:-650}, 0)
+    .fromTo('.mountBg', {y:-10},{y:-100}, 0)
+    .fromTo('.mountMg', {y:-30},{y:-250}, 0)
+    .fromTo('.mountFg', {y:-50},{y:-600}, 0)
+
+$('#arrowBtn').on('mouseenter', (e)=>{ gsap.to('.arrow', {y:10, duration:0.8, ease:'back.inOut(3)', overwrite:'auto'}); })
+$('#arrowBtn').on('mouseleave', (e)=>{ gsap.to('.arrow', {y:0, duration:0.5, ease:'power3.out', overwrite:'auto'}); })
+$('#arrowBtn').on('click', (e)=>{ gsap.to(window, {scrollTo:innerHeight, duration:1.5, ease:'power1.inOut'}); })
+ // scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
